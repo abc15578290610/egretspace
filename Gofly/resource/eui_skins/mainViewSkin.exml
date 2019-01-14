@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="mainViewSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="m_start" text="start" x="161" y="105" anchorOffsetX="0" width="143" anchorOffsetY="0" height="72" size="62"/>
+</e:Skin>
