@@ -57,14 +57,11 @@ class Main extends eui.UILayer {
             }, this);
         })
     }
-
-    private textfield: egret.TextField;
     /**
      * 创建场景界面
      * Create scene interface
      */
     protected createGameScene(): void {
-        console.log("创建场景界面11")
         let layer =  game.GameLayerManager.gameLayer()
         layer.mainLayer.addChild(game.MainView.getInstance())
         this.addChild(layer)

@@ -1,7 +1,8 @@
 module game {
 	/**主界面（开始界面）*/
 	export class MainView extends ElementUI{
-		private m_start:eui.Label;
+		private m_start:eui.Label;//游戏开始
+		private m_rule:eui.Label;//游戏规则
 		private static _instance:MainView;
 		public static getInstance():MainView  
 		{  
@@ -14,13 +15,12 @@ module game {
 			this.skinName = "mainViewSkin";
 		}
 		protected init(){
-			this.addChild(new ruleView())
+			
 		}
 		protected addEvent(){
 			this.m_start.addEventListener(egret.TouchEvent.TOUCH_TAP,this.handleEvent,this);
 		}
 		private handleEvent(e:egret.TouchEvent){
-			console.log("点击事件");
 			EventManager.dispatchEventWith("show_rule",false,{dd:11});
 		}
 	}

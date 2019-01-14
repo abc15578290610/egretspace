@@ -20,6 +20,7 @@ module game {
 		public constructor(){
 			super();
 			this.init();
+			this.registerEvent();
 		}
 
 		//游戏容器管理器单例
@@ -45,6 +46,12 @@ module game {
 			this.addChild(this.effectLayer);
 			this.addChild(this.maskLayer);
 			this.addChild(this.loadLayer);
+		}
+		private registerEvent(){
+			egret.MainContext.instance.stage.addEventListener("show_rule",this.handleEvent,this);
+		}
+		private handleEvent(e:egret.Event){
+			MainView.getInstance().addChild(new ruleView())
 		}
 	}
 }

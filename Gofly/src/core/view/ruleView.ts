@@ -8,7 +8,7 @@ module game {
 			this.touchEnabled = false;
 		}
 		protected addEvent(){
-			this.stage.addEventListener("show_rule",this.handleEvent,this);
+			// this.stage.addEventListener("show_rule",this.handleEvent,this);
 		}
 		private handleEvent(e:egret.TouchEvent){
 			console.log("规则事件",e.data);
