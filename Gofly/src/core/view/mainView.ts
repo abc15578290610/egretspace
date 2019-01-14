@@ -14,10 +14,14 @@ module game {
 			this.skinName = "mainViewSkin";
 		}
 		protected init(){
+			this.addChild(new ruleView())
+		}
+		protected addEvent(){
 			this.m_start.addEventListener(egret.TouchEvent.TOUCH_TAP,this.handleEvent,this);
 		}
 		private handleEvent(e:egret.TouchEvent){
 			console.log("点击事件");
+			EventManager.dispatchEventWith("show_rule",false,{dd:11});
 		}
 	}
 }

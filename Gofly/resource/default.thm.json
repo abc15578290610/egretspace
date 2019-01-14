@@ -1,7 +1,8 @@
 {
 	"autoGenerateExmlsList": true,
 	"exmls": [
-		"resource/eui_skins/mainViewSkin.exml"
+		"resource/eui_skins/mainViewSkin.exml",
+		"resource/eui_skins/ruleViewSkin.exml"
 	],
 	"path": "resource/default.thm.json"
 }
