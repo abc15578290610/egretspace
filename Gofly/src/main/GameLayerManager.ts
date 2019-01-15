@@ -19,8 +19,6 @@ module game {
 		//构造方法
 		public constructor(){
 			super();
-			this.init();
-			this.registerEvent();
 		}
 
 		//游戏容器管理器单例
@@ -33,6 +31,7 @@ module game {
 
 		//初始化场景类
 		public init():void {
+			this.registerEvent();
 			this.touchThrough = true;
 			this.sceneLayer.touchThrough = true;
 			this.mainLayer.touchThrough = true;
@@ -48,10 +47,11 @@ module game {
 			this.addChild(this.loadLayer);
 		}
 		private registerEvent(){
-			egret.MainContext.instance.stage.addEventListener("show_rule",this.handleEvent,this);
+			this.stage.addEventListener(EventConfigData.SHOW_RULE,this.handleEvent,this);
 		}
 		private handleEvent(e:egret.Event){
-			MainView.getInstance().addChild(new ruleView())
+			let panel = new ruleView();
+			PopUpManager.addPopUp(panel,true,panel.width,panel.height,1)
 		}
 	}
 }

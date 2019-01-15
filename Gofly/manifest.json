@@ -11,15 +11,21 @@
 	"game": [
 		"bin-debug/core/base/BaseUI.js",
 		"bin-debug/core/base/ElementUI.js",
-		"bin-debug/LoadingUI.js",
-		"bin-debug/Main.js",
+		"bin-debug/core/base/PanelUI.js",
+		"bin-debug/core/view/mainView.js",
 		"bin-debug/Platform.js",
 		"bin-debug/ThemeAdapter.js",
-		"bin-debug/Collision.js",
 		"bin-debug/AssetAdapter.js",
-		"bin-debug/core/view/mainView.js",
+		"bin-debug/LoadingUI.js",
+		"bin-debug/Main.js",
+		"bin-debug/Collision.js",
 		"bin-debug/core/view/ruleView.js",
+		"bin-debug/global/GameConfig.js",
 		"bin-debug/main/GameLayerManager.js",
-		"bin-debug/utils/EventManager.js"
+		"bin-debug/utils/EffectUtils.js",
+		"bin-debug/utils/Eventdata.js",
+		"bin-debug/utils/EventManager.js",
+		"bin-debug/utils/PopUpManager.js",
+		"bin-debug/utils/TipsUtils.js"
 	]
 }

@@ -21,7 +21,7 @@ module game {
 			this.m_start.addEventListener(egret.TouchEvent.TOUCH_TAP,this.handleEvent,this);
 		}
 		private handleEvent(e:egret.TouchEvent){
-			EventManager.dispatchEventWith("show_rule",false,{dd:11});
+			EventManager.dispatchEventWith(EventConfigData.SHOW_RULE,false,{dd:11});
 		}
 	}
 }
