@@ -1,3 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="gameViewSkin" width="400" height="300" xmlns:e="http://ns.egret.com/eui">
+<e:Skin class="gameViewSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label text="游戏主界面" horizontalCenter="0" verticalCenter="0"/>
+	<e:Label id="m_back" text="返回" x="13" y="10"/>
+	<e:Label id="m_resume" text="暂停" x="10" y="76"/>
 </e:Skin>

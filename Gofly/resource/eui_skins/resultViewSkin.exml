@@ -1,3 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="resultViewSkin" width="400" height="300" xmlns:e="http://ns.egret.com/eui">
+	<e:Label text="111111" x="63" y="48" size="26" width="50" height="32"/>
+	<e:Label text="2222" x="63" y="89" size="26" width="50" height="32"/>
+	<e:Label text="33333" x="63" y="145" size="26" width="50" height="32"/>
 </e:Skin>

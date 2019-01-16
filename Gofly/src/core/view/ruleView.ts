@@ -11,7 +11,6 @@ module game {
 		}
 		protected init(){
 			super.init();
-			console.log(this.width,"----",this.height)
 		}
 	}
 }

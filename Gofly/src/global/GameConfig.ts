@@ -115,8 +115,6 @@ module GameConfig {
     export function curHeight(): number {
         return egret.MainContext.instance.stage.stageHeight;
     }
-
-	
 }
 
 

@@ -3,7 +3,7 @@ enum eventdata{
     ddddddd=1,
     ddddddww=5
 }
-class EventConfigData{
+class EventNotify{
     /**进入游戏界面 */
     public static SHOW_GAME = "SHOW_GAME";
     /**关闭游戏界面 */

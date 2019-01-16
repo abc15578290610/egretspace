@@ -46,12 +46,27 @@ module game {
 			this.addChild(this.maskLayer);
 			this.addChild(this.loadLayer);
 		}
+		/**注册消息通知事件 */
 		private registerEvent(){
-			this.stage.addEventListener(EventConfigData.SHOW_RULE,this.handleEvent,this);
+			this.stage.addEventListener(EventNotify.SHOW_RULE,this.handleEvent,this);
+			this.stage.addEventListener(EventNotify.SHOW_GAME,this.enterGame,this);
+			this.stage.addEventListener(EventNotify.CLOSE_GAME,this.quitGame,this);
 		}
 		private handleEvent(e:egret.Event){
 			let panel = new ruleView();
 			PopUpManager.addPopUp(panel,true,panel.width,panel.height,1)
+		}
+		private enterGame(){
+			if(!this.mainLayer.contains(gameView.getInstance())){
+				MainView.getInstance().visible = false;
+				this.mainLayer.addChild(gameView.getInstance());
+			}
+		}
+		private quitGame(){
+			if(this.mainLayer.contains(gameView.getInstance())){
+				this.mainLayer.removeChild(gameView.getInstance());
+				MainView.getInstance().visible = true;
+			}
 		}
 	}
 }

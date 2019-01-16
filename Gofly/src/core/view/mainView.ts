@@ -19,9 +19,15 @@ module game {
 		}
 		protected addEvent(){
 			this.m_start.addEventListener(egret.TouchEvent.TOUCH_TAP,this.handleEvent,this);
+			this.m_rule.addEventListener(egret.TouchEvent.TOUCH_TAP,this.handleEvent,this);
 		}
 		private handleEvent(e:egret.TouchEvent){
-			EventManager.dispatchEventWith(EventConfigData.SHOW_RULE,false,{dd:11});
+			let target = e.currentTarget;
+			if(target == this.m_rule){
+				EventManager.dispatchEventWith(EventNotify.SHOW_RULE,false,{dd:11});
+			}else if(target == this.m_start){
+				EventManager.dispatchEventWith(EventNotify.SHOW_GAME,false,{dd:11});
+			}
 		}
 	}
 }

@@ -1,12 +1,12 @@
 module game {
 	export class gameView extends ElementUI{
-		private m_start:eui.Label;//游戏开始
-		private m_rule:eui.Label;//游戏规则
-		private static _instance:MainView;
-		public static getInstance():MainView  
+		private m_back:eui.Label;//返回
+		private m_resume:eui.Label;//继续
+		private static _instance:gameView;
+		public static getInstance():gameView  
 		{  
 			if(!this._instance)  
-				this._instance = new MainView();  
+				this._instance = new gameView();  
 			return this._instance;  
 		}  
 		public constructor() {
@@ -17,10 +17,10 @@ module game {
 			
 		}
 		protected addEvent(){
-			this.m_start.addEventListener(egret.TouchEvent.TOUCH_TAP,this.handleEvent,this);
+			this.m_back.addEventListener(egret.TouchEvent.TOUCH_TAP,this.handleEvent,this);
 		}
 		private handleEvent(e:egret.TouchEvent){
-			EventManager.dispatchEventWith(EventConfigData.SHOW_RULE,false,{dd:11});
+			EventManager.dispatchEventWith(EventNotify.CLOSE_GAME,false,{dd:11});
 		}
 	}
 }

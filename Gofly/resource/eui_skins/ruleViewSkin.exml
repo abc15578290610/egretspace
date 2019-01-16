@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="ruleViewSkin" width="400" height="300" xmlns:e="http://ns.egret.com/eui">
-<e:Label id="m_rule" text="规则：babababa" x="0" y="15" anchorOffsetX="0" width="143" anchorOffsetY="0" height="72" size="62"/>
-<e:Label id="m_close" text="关闭" x="8" y="101" anchorOffsetX="0" width="143" anchorOffsetY="0" height="72" size="62"/>
+<e:Label id="m_rule" text="规则：babababa" y="15" anchorOffsetX="0" width="107" anchorOffsetY="0" height="57" size="52" horizontalCenter="0"/>
+<e:Label id="m_close" text="关闭" x="342" y="7.5" anchorOffsetX="0" width="58" anchorOffsetY="0" height="35" size="29"/>
 </e:Skin>
