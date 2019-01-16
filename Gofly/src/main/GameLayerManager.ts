@@ -53,8 +53,12 @@ module game {
 			this.stage.addEventListener(EventNotify.CLOSE_GAME,this.quitGame,this);
 		}
 		private handleEvent(e:egret.Event){
-			let panel = new ruleView();
-			PopUpManager.addPopUp(panel,true,panel.width,panel.height,1)
+			if(e.type==EventNotify.SHOW_RULE){
+				let panel = new ruleView();
+				PopUpManager.addPopUp(panel,true,panel.width,panel.height,1)
+			}else if(e.type==EventNotify.CLOSE_RULE){
+				
+			}
 		}
 		private enterGame(){
 			if(!this.mainLayer.contains(gameView.getInstance())){

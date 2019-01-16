@@ -16,7 +16,7 @@ module game {
 		public show(){
 
 		}
-		public close(){
+		protected close(){
 			this.removeChildren();
 		}
 	}

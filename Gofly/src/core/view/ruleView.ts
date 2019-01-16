@@ -8,9 +8,14 @@ module game {
 			this.touchEnabled = false;
 		}
 		protected addEvent(){
+			this.m_close.addEventListener(egret.TouchEvent.TOUCH_TAP,this.close,this)
 		}
 		protected init(){
 			super.init();
+		}
+		protected close(){
+			super.close()
+			PopUpManager.removePopUp(this)
 		}
 	}
 }
