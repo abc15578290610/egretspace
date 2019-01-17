@@ -20,13 +20,14 @@
 		"bin-debug/Main.js",
 		"bin-debug/core/view/gameView.js",
 		"bin-debug/Collision.js",
+		"bin-debug/core/view/RankView.js",
 		"bin-debug/core/view/resultView.js",
 		"bin-debug/core/view/ruleView.js",
 		"bin-debug/global/GameConfig.js",
 		"bin-debug/main/GameLayerManager.js",
 		"bin-debug/utils/EffectUtils.js",
-		"bin-debug/utils/Eventdata.js",
 		"bin-debug/utils/EventManager.js",
+		"bin-debug/utils/EventNotify.js",
 		"bin-debug/utils/PopUpManager.js",
 		"bin-debug/utils/TipsUtils.js"
 	]

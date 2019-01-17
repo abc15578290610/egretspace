@@ -1,11 +1,9 @@
 /**
-  * 游戏配置文件
-  * by dily
-  * (c) copyright 2014 - 2035
-  * All Rights Reserved. 
-  * 存放游戏的配置数据
-  * 比如：游戏界面尺寸、分享随机百分比、获取系统数据
-  */
+* 游戏配置文件
+* by zhongqing
+* (c) copyright 2018 - 2019
+* All Rights Reserved.
+*/
 module GameConfig {
 
     //是否在线

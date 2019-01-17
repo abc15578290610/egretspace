@@ -1,8 +1,9 @@
-// TypeScript file
-enum eventdata{
-    ddddddd=1,
-    ddddddww=5
-}
+/**
+* 游戏配置文件
+* by zhongqing
+* (c) copyright 2018 - 2019
+* All Rights Reserved.
+*/
 class EventNotify{
     /**进入游戏界面 */
     public static SHOW_GAME = "SHOW_GAME";
@@ -16,4 +17,8 @@ class EventNotify{
     public static SHOW_RULE = "SHOW_RULE";
     /**关闭规则界面 */
     public static CLOSE_RULE = "CLOSE_RULE";
+    /**进入排行界面 */
+    public static SHOW_RANK = "SHOW_RANK";
+    /**关闭排行界面 */
+    public static CLOSE_RANK = "CLOSE_RANK";
 }

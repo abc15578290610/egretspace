@@ -3,6 +3,7 @@ module game {
 	export class MainView extends ElementUI{
 		private m_start:eui.Label;//游戏开始
 		private m_rule:eui.Label;//游戏规则
+		private m_rank:eui.Label;//排行榜
 		private static _instance:MainView;
 		public static getInstance():MainView  
 		{  
@@ -20,6 +21,7 @@ module game {
 		protected addEvent(){
 			this.m_start.addEventListener(egret.TouchEvent.TOUCH_TAP,this.handleEvent,this);
 			this.m_rule.addEventListener(egret.TouchEvent.TOUCH_TAP,this.handleEvent,this);
+			this.m_rank.addEventListener(egret.TouchEvent.TOUCH_TAP,this.handleEvent,this);
 		}
 		private handleEvent(e:egret.TouchEvent){
 			let target = e.currentTarget;
@@ -27,6 +29,8 @@ module game {
 				EventManager.dispatchEventWith(EventNotify.SHOW_RULE,false,{dd:11});
 			}else if(target == this.m_start){
 				EventManager.dispatchEventWith(EventNotify.SHOW_GAME,false,{dd:11});
+			}else if(target == this.m_rank){
+				EventManager.dispatchEventWith(EventNotify.SHOW_RANK,false,{dd:11});
 			}
 		}
 	}
