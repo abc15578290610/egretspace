@@ -51,6 +51,7 @@ module game {
 			this.stage.addEventListener(EventNotify.SHOW_RULE,this.handleEvent,this);
 			this.stage.addEventListener(EventNotify.SHOW_GAME,this.enterGame,this);
 			this.stage.addEventListener(EventNotify.CLOSE_GAME,this.quitGame,this);
+			this.stage.addEventListener(EventNotify.SHOW_RANK,this.enterRank,this);
 		}
 		private handleEvent(e:egret.Event){
 			if(e.type==EventNotify.SHOW_RULE){
@@ -71,6 +72,10 @@ module game {
 				this.mainLayer.removeChild(gameView.getInstance());
 				MainView.getInstance().visible = true;
 			}
+		}
+		private enterRank(){
+			let panel = new RankView();
+			PopUpManager.addPopUp(panel,true,panel.width,panel.height,1)
 		}
 	}
 }

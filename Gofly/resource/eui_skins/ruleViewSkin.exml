@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="ruleViewSkin" width="400" height="300" xmlns:e="http://ns.egret.com/eui">
-<e:Label id="m_rule" text="规则：babababa" y="15" anchorOffsetX="0" width="107" anchorOffsetY="0" height="57" size="52" horizontalCenter="0"/>
-<e:Label id="m_close" text="关闭" x="342" y="7.5" anchorOffsetX="0" width="58" anchorOffsetY="0" height="35" size="29"/>
+<e:Skin class="ruleViewSkin" width="750" height="500" xmlns:e="http://ns.egret.com/eui">
+	<e:Rect width="100%" height="100%" fillAlpha="0.6"/>
+<e:Label id="m_rule" text="规则：babababa" y="43" anchorOffsetX="0" width="107" anchorOffsetY="0" height="57" size="52" horizontalCenter="0.5"/>
+<e:Label id="m_close" text="关闭" x="667" y="36.5" anchorOffsetX="0" width="58" anchorOffsetY="0" height="35" size="29"/>
 </e:Skin>

@@ -130,7 +130,7 @@ module game.PopUpManager {
     * panel       		面板
     * effectType        0：没有动画 1:从中间缩小消失 2：  3：从左向右 4：从右向左 5、从上到下 6、从下到上
     */
-	export function removePopUp(panel,effectType:number = 0):void{ 
+	export function removePopUp(panel,effectType:number=0):void{ 
 
         var onComplete:Function = function(){
 	        if(GameLayerManager.gameLayer().panelLayer.contains(this.darkSprite)){

@@ -1,9 +1,15 @@
 module game {
-	/**游戏结束界面 */
+	/**
+	* 结算界面
+	* by zhongqing
+	* (c) copyright 2018 - 2019
+	* All Rights Reserved.
+	* todo
+	*/
 	export class resultView extends PanelUI{
 		public constructor() {
 			super();
-			this.skinName="ruleViewSkin";
+			this.skinName="resultViewSkin";
 			this.touchEnabled = false;
 		}
 		protected addEvent(){

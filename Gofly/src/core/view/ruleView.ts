@@ -1,4 +1,10 @@
 module game {
+	/**
+	* 规则界面
+	* by zhongqing
+	* (c) copyright 2018 - 2019
+	* All Rights Reserved.
+	*/
 	export class ruleView extends PanelUI{
 		private m_rule:eui.Label;
 		private m_close:eui.Label;
