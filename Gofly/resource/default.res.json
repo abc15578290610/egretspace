@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,scene_denglu_jpg,bg_slsb_01_png,bg_slsb_sb_jpg,bg_slsb_sl_jpg,dh_slsb_02_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,scene_denglu_jpg,bg_slsb_01_png,bg_slsb_sb_jpg,bg_slsb_sl_jpg,dh_slsb_02_png,bg_slsb_012_png,bg_slsb_sb2_jpg,bg_slsb_sl2_jpg,dh_slsb_022_png,scene_denglu2_jpg",
 			"name": "preload"
 		}
 	],
@@ -150,6 +150,31 @@
 			"name": "dh_slsb_02_png",
 			"type": "image",
 			"url": "assets/mui/dh_slsb_02.png"
+		},
+		{
+			"name": "bg_slsb_012_png",
+			"type": "image",
+			"url": "assets/mui/bg_slsb_01.png"
+		},
+		{
+			"name": "bg_slsb_sb2_jpg",
+			"type": "image",
+			"url": "assets/mui/bg_slsb_sb.jpg"
+		},
+		{
+			"name": "bg_slsb_sl2_jpg",
+			"type": "image",
+			"url": "assets/mui/bg_slsb_sl.jpg"
+		},
+		{
+			"name": "dh_slsb_022_png",
+			"type": "image",
+			"url": "assets/mui/dh_slsb_02.png"
+		},
+		{
+			"name": "scene_denglu2_jpg",
+			"type": "image",
+			"url": "assets/mui/scene_denglu.jpg"
 		}
 	]
 }
