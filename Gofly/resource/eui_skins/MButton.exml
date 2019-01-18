@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MButton" width="200" height="45" xmlns:e="http://ns.egret.com/eui">
+	<e:Rect width="200" height="45" fillColor="0x73D13D" ellipseWidth="12" ellipseHeight="12" strokeWeight="3"/>
+</e:Skin>

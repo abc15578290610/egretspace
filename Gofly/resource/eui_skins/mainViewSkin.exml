@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="mainViewSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Rect width="100%" height="100%" fillColor="0x5a5a5a"/>
-	<e:Label id="m_start" text="start" y="105" anchorOffsetX="0" width="143" anchorOffsetY="0" height="72" size="62" textAlign="center" horizontalCenter="0"/>
-	<e:Label id="m_rule" text="rule" y="263" anchorOffsetX="0" width="143" anchorOffsetY="0" height="72" size="62" textAlign="center" horizontalCenter="0.5"/>
-	<e:Label id="m_rank" text="rank" y="469" size="48" horizontalCenter="0"/>
+	<e:Rect width="100%" height="100%" fillColor="0x595959"/>
+
+	<e:Button id="m_start" label="hhhhhhhh" y="208" skinName="MButton" horizontalCenter="0"/>
+	<e:Button id="m_rule" label="hhhhhhhh" y="280" skinName="MButton" horizontalCenter="0"/>
+	<e:Button id="m_rank" label="hhhhhhhh" y="362" skinName="MButton" horizontalCenter="0"/>
 </e:Skin>
