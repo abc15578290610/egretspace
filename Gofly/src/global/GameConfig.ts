@@ -5,18 +5,15 @@
 * All Rights Reserved.
 */
 module GameConfig {
-
-    //是否在线
-    export var isOnLine: boolean = navigator.onLine;
-
     //全局字体颜色表--可以扩展
     export var TextColors = {
+        mainColor:0x73D13D,
         white: 0xFFFFFF,//白色
         milkWhite: 0xfbf1af,//乳白色 
         grayWhite: 0xceb6a2,//灰白色
         yellow: 0xffff00,//金黄色 
         lightYellow: 0xffd375,//淡黄色
-        orangeYellow: 0xff9900,//橘黄色//道具名称 //玩家姓名
+        orangeYellow: 0xff9900,//橘黄色
         red: 0xf11300,//红色
         green: 0x00e500,//绿色 
         blue: 0x1a94d7,//蓝色 
@@ -35,7 +32,7 @@ module GameConfig {
         bigSize: 36//大型字体大小
     }
 
-    //是不是微信浏览
+    //判断是否为微信
     export function isWeiXin(): boolean {
         var ua = window.navigator.userAgent.toLowerCase();
         var microStr = "" + ua.match(/MicroMessenger/i);
@@ -95,7 +92,6 @@ module GameConfig {
             return "other";
         }
     }
-
     //当前舞台
     export function curStage(): egret.Stage {
         return egret.MainContext.instance.stage;

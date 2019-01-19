@@ -122,7 +122,6 @@ module game.PopUpManager {
             default:
                 break;
         }		
- 
 	} 
 
     /**

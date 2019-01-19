@@ -5,7 +5,6 @@
     * All Rights Reserved. 
     * 使用方法如：EffectUtils.rotationEffect()
     */
-
 module EffectUtils {
 
     // 存储旋转对象
@@ -233,7 +232,7 @@ module EffectUtils {
     * content       文字
     * interval      打字间隔 毫秒
     */    
-    export function typerEffect(obj,content:string = "",interval:number = 200):void{
+    export function typerEffect(obj:eui.Label,content:string = "",interval:number = 200):void{
         var strArr:Array<any> = content.split("");
         var len:number = strArr.length;
         for (var i = 0; i < len; i++){
@@ -242,6 +241,4 @@ module EffectUtils {
             }, i, interval*i);              
         }
     }
-
-
 }

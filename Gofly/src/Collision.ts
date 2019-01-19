@@ -1,12 +1,6 @@
 
 /**碰撞工具类 */
 class Collision {
-
-
-
-
-
-
     /**
      * 矩形包围盒碰撞检测
      * 参数obj1,obj2要求是显示对象，必须有坐标和宽高
@@ -18,9 +12,6 @@ class Collision {
         b2Rect.x = obj2.x; b2Rect.y = obj2.y;
         return b1Rect.intersects(b2Rect);
     }
-
-
-
     private aRect: egret.Rectangle;
     private bRect: egret.Rectangle;
     /**面与面检测,
@@ -60,8 +51,6 @@ class Collision {
         }
     }
 
-
-
     /**点与面的检测，
      * 参数you为对象，x和y为检测点的坐标，
      * （ you.hitTestPoint(x: number, y:number ) ） */
@@ -70,8 +59,6 @@ class Collision {
         return isHit;
 
     }
-
-
     /**点与面的像素检测，
      * 据说很耗性能
      * 像素碰撞检测，是判断显示对象的图案（非透明区域）是否与一点相交。
@@ -82,7 +69,6 @@ class Collision {
         return isHit;
 
     }
-
 
     /**
      * 圆与圆的检测

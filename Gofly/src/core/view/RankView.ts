@@ -6,7 +6,7 @@ module game {
 * All Rights Reserved.
 */
 export class RankView extends PanelUI{
-	private m_close:eui.Label;
+	private m_close:eui.Image;
 	private m_list:eui.List;
 	public constructor() {
 		super();
@@ -19,7 +19,7 @@ export class RankView extends PanelUI{
 			let item = {num:0,grade:0,alpha:0.5}
 			item.num = i+1;
 			item.grade=i*1000;
-			item.alpha = i%2==0?0:0.5;
+			item.alpha = i%2==0?0.5:0;
 			data.push(item);
 		}
 		this.setData(data)
