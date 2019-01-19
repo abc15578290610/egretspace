@@ -14,7 +14,9 @@ module game {
 			this.skinName = "gameViewSkin";
 		}
 		protected init(){
-			
+			setTimeout(()=>{
+				EventManager.dispatchEventWith(EventNotify.GAME_RESULT,false,{dd:11});
+			},1000)
 		}
 		protected addEvent(){
 			this.m_back.addEventListener(egret.TouchEvent.TOUCH_TAP,this.handleEvent,this);

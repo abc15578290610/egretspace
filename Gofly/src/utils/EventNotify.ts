@@ -21,4 +21,6 @@ class EventNotify{
     public static SHOW_RANK = "SHOW_RANK";
     /**关闭排行界面 */
     public static CLOSE_RANK = "CLOSE_RANK";
+    /**游戏结算 */
+    public static GAME_RESULT = "GAME_RESULT";
 }
