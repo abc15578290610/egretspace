@@ -14,7 +14,7 @@ module game {
 			this.skinName = "gameViewSkin";
 		}
 		protected init(){
-			setTimeout(()=>{
+			setTimeout(function(){
 				EventManager.dispatchEventWith(EventNotify.GAME_RESULT,false,{dd:11});
 			},1000)
 		}
