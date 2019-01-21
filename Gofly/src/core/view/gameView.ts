@@ -22,10 +22,11 @@ module game {
 			// this.m_bg
 			var img = this.drawImage(this.m_bg,this.m_1.x,this.m_1.y,this.m_1.width,this.m_1.height);
 		}
+		/**截的是原始图，不经过缩放 */
 		private drawImage(target: egret.DisplayObject,x?: number, y?: number, width?: number, height?: number){
 			var rect = new egret.Rectangle(x,y,width,height)
 			var rt:egret.RenderTexture = new egret.RenderTexture();
-            rt.drawToTexture(target,rect);
+            rt.drawToTexture(target,rect,target.scaleX);
 			rt.toDataURL("image / png",rect);
 			this.m_1.texture = rt;
 		}

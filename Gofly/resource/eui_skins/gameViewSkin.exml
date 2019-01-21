@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="gameViewSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Image id="m_bg" source="bg_slsb_sl_jpg" width="100%" height="100%"/>
+	<e:Image id="m_bg" source="bg_slsb_sl_jpg"/>
 	<e:Image id="m_back" source="back_1_png" x="22" y="22" width="85" height="85"/>
 	<e:Image id="m_1" width="100" height="100" x="290" y="123"/>
 </e:Skin>
