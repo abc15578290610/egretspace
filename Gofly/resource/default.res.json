@@ -1,85 +1,90 @@
 {
 	"groups": [
 		{
-			"keys": "description_json,scene_denglu_jpg,bg_slsb_01_png,bg_slsb_sb_jpg,bg_slsb_sl_jpg,dh_slsb_02_png,bg_slsb_012_png,bg_slsb_sb2_jpg,bg_slsb_sl2_jpg,dh_slsb_022_png,scene_denglu2_jpg,close_1_png,close_png,back_1_png,back_png",
+			"keys": "description_json,scene_denglu_jpg,bg_slsb_01_png,bg_slsb_sb_jpg,bg_slsb_sl_jpg,dh_slsb_02_png,bg_slsb_012_png,bg_slsb_sb2_jpg,bg_slsb_sl2_jpg,dh_slsb_022_png,scene_denglu2_jpg,close_1_png,close_png,back_1_png,back_png,1_jpg",
 			"name": "preload"
 		}
 	],
 	"resources": [
 		{
-			"name": "description_json",
+			"url": "config/description.json",
 			"type": "json",
-			"url": "config/description.json"
+			"name": "description_json"
 		},
 		{
-			"name": "scene_denglu_jpg",
+			"url": "assets/mui/scene_denglu.jpg",
 			"type": "image",
-			"url": "assets/mui/scene_denglu.jpg"
+			"name": "scene_denglu_jpg"
 		},
 		{
-			"name": "bg_slsb_01_png",
+			"url": "assets/mui/bg_slsb_01.png",
 			"type": "image",
-			"url": "assets/mui/bg_slsb_01.png"
+			"name": "bg_slsb_01_png"
 		},
 		{
-			"name": "bg_slsb_sb_jpg",
+			"url": "assets/mui/bg_slsb_sb.jpg",
 			"type": "image",
-			"url": "assets/mui/bg_slsb_sb.jpg"
+			"name": "bg_slsb_sb_jpg"
 		},
 		{
-			"name": "bg_slsb_sl_jpg",
+			"url": "assets/mui/bg_slsb_sl.jpg",
 			"type": "image",
-			"url": "assets/mui/bg_slsb_sl.jpg"
+			"name": "bg_slsb_sl_jpg"
 		},
 		{
-			"name": "dh_slsb_02_png",
+			"url": "assets/mui/dh_slsb_02.png",
 			"type": "image",
-			"url": "assets/mui/dh_slsb_02.png"
+			"name": "dh_slsb_02_png"
 		},
 		{
-			"name": "bg_slsb_012_png",
+			"url": "assets/mui/bg_slsb_01.png",
 			"type": "image",
-			"url": "assets/mui/bg_slsb_01.png"
+			"name": "bg_slsb_012_png"
 		},
 		{
-			"name": "bg_slsb_sb2_jpg",
+			"url": "assets/mui/bg_slsb_sb.jpg",
 			"type": "image",
-			"url": "assets/mui/bg_slsb_sb.jpg"
+			"name": "bg_slsb_sb2_jpg"
 		},
 		{
-			"name": "bg_slsb_sl2_jpg",
+			"url": "assets/mui/bg_slsb_sl.jpg",
 			"type": "image",
-			"url": "assets/mui/bg_slsb_sl.jpg"
+			"name": "bg_slsb_sl2_jpg"
 		},
 		{
-			"name": "dh_slsb_022_png",
+			"url": "assets/mui/dh_slsb_02.png",
 			"type": "image",
-			"url": "assets/mui/dh_slsb_02.png"
+			"name": "dh_slsb_022_png"
 		},
 		{
-			"name": "scene_denglu2_jpg",
+			"url": "assets/mui/scene_denglu.jpg",
 			"type": "image",
-			"url": "assets/mui/scene_denglu.jpg"
+			"name": "scene_denglu2_jpg"
 		},
 		{
-			"name": "close_1_png",
+			"url": "assets/btn/close_1.png",
 			"type": "image",
-			"url": "assets/btn/close_1.png"
+			"name": "close_1_png"
 		},
 		{
-			"name": "close_png",
+			"url": "assets/btn/close.png",
 			"type": "image",
-			"url": "assets/btn/close.png"
+			"name": "close_png"
 		},
 		{
-			"name": "back_1_png",
+			"url": "assets/btn/back_1.png",
 			"type": "image",
-			"url": "assets/btn/back_1.png"
+			"name": "back_1_png"
 		},
 		{
-			"name": "back_png",
+			"url": "assets/btn/back.png",
 			"type": "image",
-			"url": "assets/btn/back.png"
+			"name": "back_png"
+		},
+		{
+			"url": "assets/mui/1.jpeg",
+			"type": "image",
+			"name": "1_jpg"
 		}
 	]
 }

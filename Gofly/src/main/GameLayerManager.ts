@@ -66,6 +66,9 @@ module game {
 			if(!this.mainLayer.contains(gameView.getInstance())){
 				MainView.getInstance().visible = false;
 				this.mainLayer.addChild(gameView.getInstance());
+				gameView.getInstance().initGame();
+			}else{
+				gameView.getInstance().initGame();
 			}
 		}
 		private quitGame(){
