@@ -6,6 +6,9 @@ module game {
 		private m_group:eui.Group;
 		private currArry:any[]=[];
 		private RamdonArry:any[]=[];
+		private m_roll:egret.tween.TweenGroup;
+		private m_mask:eui.Rect;
+		private m_rollBg:eui.Group;
 		private static _instance:gameView;
 		public static getInstance():gameView  
 		{  
@@ -18,8 +21,10 @@ module game {
 			this.skinName = "gameViewSkin";
 		}
 		protected init(){
+			this.m_rollBg.mask = this.m_mask;
 		}
 		public initGame(){
+			this.m_roll.play(1);
 			this.currArry=[];
 			this.RamdonArry=[];
 			this._target1=null;
@@ -41,6 +46,7 @@ module game {
 				img.y = this.RamdonArry[j].y
 			}
 			this.m_bg.visible = false;
+			this.m_group.scaleX = this.m_group.scaleY=0.6;
 		}
 		
 		private shuffle(arr) {
@@ -91,6 +97,7 @@ module game {
 			let target:eui.Image = e.target
 			if(target){
 				if(this._target1){
+					if(!this.checkMove(this._target1,target))return;
 					this._target2 = target;
 					this._target2.alpha=0.5;
 				}else{
@@ -116,11 +123,21 @@ module game {
 					return false;
 				}
 			}
-			console.log("输出")
 			EventManager.dispatchEventWith(EventNotify.GAME_RESULT,false,{dd:11});
 		}
 		private handleEvent(e:egret.TouchEvent){
 			EventManager.dispatchEventWith(EventNotify.CLOSE_GAME,false,{dd:11});
+		}
+		/**检测是否可以移动 */
+		private checkMove(obj1:egret.DisplayObject,obj2:egret.DisplayObject){
+			if(Math.abs(obj2.x-obj1.x)>=400){//禁止水平方向跨格移动
+				return false;
+			}
+			if(Math.abs(obj2.y-obj1.y)>=400){//禁止竖直方向跨格移动
+				return false;
+			}
+			if((obj2.x!=obj1.x)&&(obj2.y!=obj1.y))return false;//禁止对角移动
+			return true;
 		}
 	}
 }

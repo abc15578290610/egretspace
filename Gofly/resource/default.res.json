@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "description_json,scene_denglu_jpg,bg_slsb_01_png,bg_slsb_sb_jpg,bg_slsb_sl_jpg,dh_slsb_02_png,bg_slsb_012_png,bg_slsb_sb2_jpg,bg_slsb_sl2_jpg,dh_slsb_022_png,scene_denglu2_jpg,close_1_png,close_png,back_1_png,back_png,1_jpg",
+			"keys": "description_json,bg_slsb_sb_jpg,bg_slsb_sl_jpg,scene_denglu2_jpg,close_1_png,close_png,back_1_png,back_png,1_jpg,dh_slsb_022_png,bg_slsb_012_png",
 			"name": "preload"
 		}
 	],
@@ -10,16 +10,6 @@
 			"url": "config/description.json",
 			"type": "json",
 			"name": "description_json"
-		},
-		{
-			"url": "assets/mui/scene_denglu.jpg",
-			"type": "image",
-			"name": "scene_denglu_jpg"
-		},
-		{
-			"url": "assets/mui/bg_slsb_01.png",
-			"type": "image",
-			"name": "bg_slsb_01_png"
 		},
 		{
 			"url": "assets/mui/bg_slsb_sb.jpg",
@@ -32,24 +22,9 @@
 			"name": "bg_slsb_sl_jpg"
 		},
 		{
-			"url": "assets/mui/dh_slsb_02.png",
-			"type": "image",
-			"name": "dh_slsb_02_png"
-		},
-		{
 			"url": "assets/mui/bg_slsb_01.png",
 			"type": "image",
 			"name": "bg_slsb_012_png"
-		},
-		{
-			"url": "assets/mui/bg_slsb_sb.jpg",
-			"type": "image",
-			"name": "bg_slsb_sb2_jpg"
-		},
-		{
-			"url": "assets/mui/bg_slsb_sl.jpg",
-			"type": "image",
-			"name": "bg_slsb_sl2_jpg"
 		},
 		{
 			"url": "assets/mui/dh_slsb_02.png",
