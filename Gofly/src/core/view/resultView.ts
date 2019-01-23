@@ -11,6 +11,8 @@ module game {
 		private m_ad:Mbutton;
 		private time:number = 15;
 		private num:number;
+		private m_score:eui.Label;
+		private m_step:eui.Label;
 		public constructor() {
 			super();
 			this.skinName="resultViewSkin";
@@ -26,9 +28,13 @@ module game {
 			this.m_restart.label="重新开始";
 			this.m_ad.label="看广告复活("+(this.time--)+"s)";
 			this.num=setInterval(()=>{
-				if(this.time<0){clearInterval(this.num);this.close();};
+				if(this.time<0){clearInterval(this.num);return};
 				this.m_ad.label="看广告复活("+(this.time--)+"s)";
 			},1000)
+		}
+		public setdata(step:number,time:number){
+			this.m_step.text = "步数"+step+",牛逼哦";
+			this.m_score.text = "总分"+Math.floor(1000000/(step*time))+",牛逼哦"
 		}
 		private startHandle(){
 			this.close();

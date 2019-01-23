@@ -2,8 +2,9 @@
 <e:Skin class="resultViewSkin" width="550" height="400" xmlns:e="http://ns.egret.com/eui" xmlns:game="game.*" xmlns:w="http://ns.egret.com/wing">
 	<e:Rect width="100%" height="100%" fillAlpha="0.6" ellipseHeight="10" ellipseWidth="10"/>
 	<e:Label text="游戏结束" height="32" y="17" horizontalCenter="0" fontFamily="Microsoft YaHei"/>
-	<e:Label text="得分" x="45" y="65" size="26" height="32" fontFamily="Microsoft YaHei"/>
-	<e:Label text="再接再厉" x="44" y="116" size="26" height="32" fontFamily="Microsoft YaHei"/>
+	<e:Label id="m_step" text="得分" x="45" y="87" size="26" height="32" fontFamily="Microsoft YaHei"/>
+	<e:Label id="m_score" text="得分" x="45" y="133" size="26" height="32" fontFamily="Microsoft YaHei"/>
+	<e:Label text="再接再厉" x="45" y="174" size="26" height="91" fontFamily="Microsoft YaHei" anchorOffsetX="0" width="441" anchorOffsetY="0"/>
 	<game:Mbutton id="m_ad" label="看广告复活" skinName="MButton" anchorOffsetX="0" width="203" anchorOffsetY="0" height="60" y="284" x="48"/>
 	<game:Mbutton id="m_restart" label="重新开始" skinName="MButton" anchorOffsetX="0" width="230" anchorOffsetY="0" height="60" y="284" x="272"/>
 </e:Skin>
