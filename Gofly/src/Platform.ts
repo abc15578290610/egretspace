@@ -14,26 +14,26 @@ declare interface Platform {
     //登陆
     login(): Promise<any>
 
-    //分享
-    shareAppMessage(title: string, imgurl: string, query: string): Promise<any>
+    // //分享
+    // shareAppMessage(title: string, imgurl: string, query: string): Promise<any>
 
-    //更新转发属性
-    updateShareMenu(withticket): Promise<any>
+    // //更新转发属性
+    // updateShareMenu(withticket): Promise<any>
 
-    //带标志发送
-    shareApp(title: string, imgurl: string, query: string): Promise<any>
+    // //带标志发送
+    // shareApp(title: string, imgurl: string, query: string): Promise<any>
 
-    //显示广告
-    showAD(): void;
+    // //显示广告
+    // showAD(): void;
 
-    //存储排行数据
-    setUserCloudStorage(kvobj: any): void;
+    // //存储排行数据
+    // setUserCloudStorage(kvobj: any): void;
 
-    //向数据域发消息
-    sendShareData(kvobj: any): void;
+    // //向数据域发消息
+    // sendShareData(kvobj: any): void;
 
-    //获取启动参数
-    getLaunchOptionsSync(): any;
+    // //获取启动参数
+    // getLaunchOptionsSync(): any;
 }
 
 class DebugPlatform implements Platform {
@@ -45,23 +45,23 @@ class DebugPlatform implements Platform {
 
     }
 
-    async showAD() {
+    // async showAD() {
 
-    }
+    // }
 
-    async setUserCloudStorage(kvobj: any) {
+    // async setUserCloudStorage(kvobj: any) {
 
-    }
+    // }
 
-    async shareAppMessage(title: string, imgurl: string, query: string): Promise<any> { }
+    // async shareAppMessage(title: string, imgurl: string, query: string): Promise<any> { }
 
-    sendShareData(kvobj: any) { }
+    // sendShareData(kvobj: any) { }
 
-    getLaunchOptionsSync(): any { }
+    // getLaunchOptionsSync(): any { }
 
-    async shareApp(title: string, imgurl: string, query: string): Promise<any> { }
+    // async shareApp(title: string, imgurl: string, query: string): Promise<any> { }
 
-    async updateShareMenu(withticket): Promise<any> { }
+    // async updateShareMenu(withticket): Promise<any> { }
 }
 
 if (!window.platform) {

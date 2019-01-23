@@ -19,7 +19,7 @@ class EventCustomMgr extends egret.EventDispatcher{
     constructor() {
         super();
         if(EventCustomMgr._mInstance || !EventCustomMgr._mIsInstance){
-            sayError("这个对象不能new!!!")
+            console.log("这个对象不能new!!!")
         }
     }
     public static addEventListener(type: string, listener: Function, thisObject: any, useCapture?: boolean, priority?: number): void{

@@ -1,3 +1,4 @@
+window["game"] = game;
 module game {
 	/**
 	* 结算界面

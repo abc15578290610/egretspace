@@ -1,4 +1,4 @@
-module com_main {
+module game {
 	/**
 	 *
 	 * @author 

@@ -61,52 +61,6 @@ class TimerUtils {
             if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
         return fmt;
     }
-
-    /**
-* 将时间长度格式化
-*
-*/
-    public static diffTimeFormat(fmt: string, time: number, type: number = 1) {
-        var day = Utils.number2int(time / 86400);
-        var hour = Utils.number2int(time % 86400 / 3600);
-        var minutent = Utils.number2int(time % 3600 / 60);
-        var seconds = Utils.number2int(time % 60);
-        if (!new RegExp("(d+)").test(fmt)) {
-            hour += day * 24;
-        }
-        if (!new RegExp("(h+)").test(fmt)) {
-            minutent += hour * 60;
-        }
-
-        var o = {
-            "d+": day, //日 
-            "h+": hour, //小时 
-            "m+": minutent, //分 
-            "s+": seconds, //秒 
-        };
-        for (var k in o)
-            if (new RegExp("(" + k + ")").test(fmt)) {
-                //                    debug((("00" + o[k]).substr(("" + o[k]).length)));
-                fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : ("" + o[k]).length == 1 ? "0" + o[k] : o[k]);
-            }
-
-        return fmt;
-    }
-
-
-    /**
-     * 时分
-     * @param time 秒
-     * @returns {string}
-     */
-    public static getTimeStr(time){
-        var hour = Utils.number2int(time % 86400 / 3600);
-        var minutent = Utils.number2int(time % 3600 / 60);
-        var seconds = Utils.number2int(time % 60);
-        return "" + hour + ":" + minutent + ":" + seconds;
-        // var seconds = Utils.number2int(time % 60);
-        // return TimerUtils.diffTimeFormat('hh:mm:ss',time);
-    }
     /**
      * 时分(本地时间)
      * @param time 秒
@@ -186,7 +140,6 @@ class TimerUtils {
     }
     public static tempTimeEnd(){
         let t = egret.getTimer() - TimerUtils._mCurrTempTime
-        log("时间间隔：", t)
         return t;
     }
     /////------------------------  临时计时  --------------------------
