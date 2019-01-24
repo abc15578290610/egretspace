@@ -21,7 +21,8 @@ module game {
 			EffectUtils.typerEffect(this.m_song,this._text,300);
 		}
 		protected addEvent(){
-			this.m_start.addEventListener(egret.TouchEvent.TOUCH_TAP,this.handleEvent,this);
+			EventManager.addTouchScaleListener(this.m_start,this,this.handleEvent)
+			// this.m_start.addEventListener(egret.TouchEvent.TOUCH_TAP,this.handleEvent,this);
 			this.m_rule.addEventListener(egret.TouchEvent.TOUCH_TAP,this.handleEvent,this);
 			this.m_rank.addEventListener(egret.TouchEvent.TOUCH_TAP,this.handleEvent,this);
 		}

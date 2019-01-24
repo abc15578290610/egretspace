@@ -31,7 +31,7 @@ export class RankView extends PanelUI{
 		this.m_close.addEventListener(egret.TouchEvent.TOUCH_TAP,this.close,this)
 	}
 	protected close(){
-		super.close()
+		super.close();
 		PopUpManager.removePopUp(this)
 	}
 }
