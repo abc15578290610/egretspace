@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ruleViewSkin" width="650" height="500" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect width="100%" height="100%" fillAlpha="0.6" ellipseHeight="10" ellipseWidth="10"/>
+<e:Label id="m_rule" text="规则" y="29" anchorOffsetX="0" anchorOffsetY="0" height="30" horizontalCenter="1"/>
+	<e:Rect width="721" height="414" y="73" anchorOffsetY="0" anchorOffsetX="0" strokeWeight="3" fillColor="0x666262" fillAlpha="0.5" strokeAlpha="0.5" ellipseHeight="20" ellipseWidth="20" horizontalCenter="0" strokeColor="0x73d13d"/>
+	<e:Label id="m_content" text="" y="111" anchorOffsetX="0" width="621" anchorOffsetY="0" height="342" horizontalCenter="0" textColor="0x73d13d"/>
+</e:Skin>

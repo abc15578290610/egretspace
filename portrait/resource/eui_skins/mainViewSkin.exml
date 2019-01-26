@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="mainViewSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect width="100%" height="100%" fillColor="0x595959"/>
+	<e:Image width="100%" height="100%" source="scene_denglu2_jpg"/>
+	<e:Label id="m_song" text="" x="176" y="124" fontFamily="KaiTi" width="294" height="341" textColor="0x0f0e0e" size="16" textAlign="center" alpha="0.6"/>
+	<e:Button id="m_start" label="开始挑战" y="509" skinName="MButton" height="85" x="275"/>
+	<e:Button id="m_rule" label="游戏规则" y="625" skinName="MButton" height="85" x="275"/>
+	<e:Button id="m_rank" label="排行榜" y="741" skinName="MButton" height="85" x="275"/>
+
+
+
+
+
+</e:Skin>

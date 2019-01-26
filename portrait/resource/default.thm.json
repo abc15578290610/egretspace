@@ -1,0 +1,13 @@
+{
+	"autoGenerateExmlsList": true,
+	"exmls": [
+		"resource/eui_skins/gameViewSkin.exml",
+		"resource/eui_skins/MButton.exml",
+		"resource/eui_skins/mainViewSkin.exml",
+		"resource/eui_skins/rankItemSkin.exml",
+		"resource/eui_skins/rankViewSkin.exml",
+		"resource/eui_skins/resultViewSkin.exml",
+		"resource/eui_skins/ruleViewSkin.exml"
+	],
+	"path": "resource/default.thm.json"
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="gameViewSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+		<tween:TweenGroup id="m_roll">
+			<tween:TweenItem target="{m_right}">
+				<tween:To duration="1750" ease="cubicIn">
+					<tween:props>
+						<e:Object y="{1124}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{m_mask}">
+				<tween:To duration="1750" ease="cubicIn">
+					<tween:props>
+						<e:Object height="{1060}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{m_group}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="1500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="150" ease="cubicIn">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{group}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1250" ease="cubicOut">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Image source="bg_slsb_sl_jpg" width="100%" height="100%"/>
+	<e:Image id="m_back" source="back_1_png" x="22" y="-6" width="85" height="85"/>
+	<e:Image id="m_bg" source="1_jpg" width="600" height="600" x="367" y="75" visible="false"/>
+	<e:Group id="m_rollBg" y="110" mask="m_mask" width="592" height="1060" x="79">
+		<e:Image source="bg_slsb_012_png" y="0" rotation="90" x="561"/>
+		<e:Image source="bg_slsb_012_png" rotation="-90" x="31" y="1036"/>
+	</e:Group>
+	<e:Rect id="m_mask" height="62" y="110" horizontalCenter="0" width="592"/>
+	<e:Image id="m_left" source="dh_slsb_022_png" y="75" rotation="90" x="695"/>
+	<e:Image id="m_right" source="dh_slsb_022_png" rotation="90" y="141" x="695"/>
+	<e:Group id="m_group" verticalCenter="-42" horizontalCenter="0">
+		<e:Image id="m_0" width="200" height="200" scaleX="1" scaleY="1" x="0" y="0"/>
+		<e:Image id="m_1" width="200" height="200" scaleX="1" scaleY="1" x="200" y="0"/>
+		<e:Image id="m_2" width="200" height="200" scaleX="1" scaleY="1" x="400" y="0"/>
+		<e:Image id="m_3" width="200" height="200" scaleX="1" scaleY="1" x="0" y="200"/>
+		<e:Image id="m_4" width="200" height="200" scaleX="1" scaleY="1" x="200" y="200"/>
+		<e:Image id="m_5" width="200" height="200" scaleX="1" scaleY="1" x="400" y="200"/>
+		<e:Image id="m_6" width="200" height="200" scaleX="1" scaleY="1" x="0" y="400"/>
+		<e:Image id="m_7" width="200" height="200" scaleX="1" scaleY="1" x="200" y="400"/>
+		<e:Image id="m_8" width="200" height="200" scaleX="1" scaleY="1" x="400" y="400"/>
+	</e:Group>
+	<e:Group id="group" x="160" top="178">
+		<e:Label id="m_timer" text="时间:" x="0" y="0" fontFamily="Microsoft YaHei"/>
+		<e:Label id="m_step" text="步数:" x="0" y="78" fontFamily="Microsoft YaHei"/>
+	</e:Group>
+</e:Skin>
