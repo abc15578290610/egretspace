@@ -9,5 +9,5 @@
 ``` text
 ./
 ├── gofly                                   // 横屏框架                          
-└── portrait.js                             // 竖屏框架
+└── portrait                             // 竖屏框架
 ```
