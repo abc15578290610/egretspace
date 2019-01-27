@@ -6,7 +6,6 @@ module game {
 * All Rights Reserved.
 */
 export class RankView extends PanelUI{
-	private m_close:eui.Image;
 	private m_list:eui.List;
 	public constructor() {
 		super();
@@ -28,7 +27,6 @@ export class RankView extends PanelUI{
 		this.m_list.dataProvider = new eui.ArrayCollection(data);
 	}
 	protected addEvent(){
-		this.m_close.addEventListener(egret.TouchEvent.TOUCH_TAP,this.close,this)
 	}
 	protected close(){
 		super.close();
