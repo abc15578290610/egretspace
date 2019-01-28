@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "description_json,bg_slsb_sb_jpg,bg_slsb_sl_jpg,scene_denglu2_jpg,close_png,back_1_png,1_jpg,dh_slsb_022_png,bg_slsb_012_png,5_png,btn_rule_png,btn_rank_png,btn_start_png,btn_start1_png",
+			"keys": "description_json,close_png,back_1_png,dh_slsb_022_png,bg_slsb_012_png,5_png,btn_rank_png,btn_start_png,bg_slsb_sl_png,scene_denglu_png,zq_yj_di_png,1_jpg,title_png",
 			"name": "preload"
 		}
 	],
@@ -12,16 +12,6 @@
 			"name": "description_json"
 		},
 		{
-			"url": "assets/mui/bg_slsb_sb.jpg",
-			"type": "image",
-			"name": "bg_slsb_sb_jpg"
-		},
-		{
-			"url": "assets/mui/bg_slsb_sl.jpg",
-			"type": "image",
-			"name": "bg_slsb_sl_jpg"
-		},
-		{
 			"url": "assets/mui/bg_slsb_01.png",
 			"type": "image",
 			"name": "bg_slsb_012_png"
@@ -30,11 +20,6 @@
 			"url": "assets/mui/dh_slsb_02.png",
 			"type": "image",
 			"name": "dh_slsb_022_png"
-		},
-		{
-			"url": "assets/mui/scene_denglu.jpg",
-			"type": "image",
-			"name": "scene_denglu2_jpg"
 		},
 		{
 			"url": "assets/btn/close.png",
@@ -52,29 +37,39 @@
 			"name": "1_jpg"
 		},
 		{
-			"name": "5_png",
+			"url": "assets/btn/5.png",
 			"type": "image",
-			"url": "assets/btn/5.png"
+			"name": "5_png"
 		},
 		{
-			"name": "btn_rule_png",
+			"url": "assets/btn/btn_rank.png",
 			"type": "image",
-			"url": "assets/btn/btn_rule.png"
+			"name": "btn_rank_png"
 		},
 		{
-			"name": "btn_rank_png",
+			"url": "assets/btn/btn_start.png",
 			"type": "image",
-			"url": "assets/btn/btn_rank.png"
+			"name": "btn_start_png"
 		},
 		{
-			"name": "btn_start_png",
+			"url": "assets/mui/bg_slsb_sl.png",
 			"type": "image",
-			"url": "assets/btn/btn_start.png"
+			"name": "bg_slsb_sl_png"
 		},
 		{
-			"name": "btn_start1_png",
+			"url": "assets/mui/scene_denglu.png",
 			"type": "image",
-			"url": "assets/btn/btn_start1.png"
+			"name": "scene_denglu_png"
+		},
+		{
+			"url": "assets/mui/zq_yj_di.png",
+			"type": "image",
+			"name": "zq_yj_di_png"
+		},
+		{
+			"url": "assets/btn/title.png",
+			"type": "image",
+			"name": "title_png"
 		}
 	]
 }

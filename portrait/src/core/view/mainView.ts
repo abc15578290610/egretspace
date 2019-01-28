@@ -4,8 +4,6 @@ module game {
 		private m_start:eui.Button;//开始挑战
 		private m_rule:eui.Button;//游戏规则
 		private m_rank:eui.Button;//排行榜
-		private m_song:eui.Label;//诗词
-		private _text:string="对酒忆贺监二首\n[唐] 李白\n四明有狂客，风流贺季真。\n长安一相见，呼我谪仙人。\n昔好杯中物，翻为松下尘。\n金龟换酒处，却忆泪沾巾。"
 		private static _instance:MainView;
 		public static getInstance():MainView  
 		{  
@@ -18,7 +16,7 @@ module game {
 			this.skinName = "mainViewSkin";
 		}
 		protected init(){
-			EffectUtils.typerEffect(this.m_song,this._text,300);
+			
 		}
 		protected addEvent(){
 			EventManager.addTouchScaleListener(this.m_start,this,this.handleEvent)

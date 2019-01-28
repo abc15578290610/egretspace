@@ -6,9 +6,6 @@ module game {
 		private m_group: eui.Group;
 		private currArry: any[] = [];
 		private RamdonArry: any[] = [];
-		private m_roll: egret.tween.TweenGroup;
-		private m_mask: eui.Rect;
-		private m_rollBg: eui.Group;
 		private step = 0;
 		private time: number = 0;
 		private m_step: eui.Label;
@@ -24,11 +21,9 @@ module game {
 			this.skinName = "gameViewSkin";
 		}
 		protected init() {
-			this.m_rollBg.mask = this.m_mask;
 		}
 		private time_num = 0;
 		public initGame() {
-			this.m_roll.play(1);
 			this.step = 0;
 			this.time = 0;
 			this.m_timer.text = "耗时:" + this.time + "s";
