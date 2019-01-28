@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "description_json,bg_slsb_sb_jpg,bg_slsb_sl_jpg,scene_denglu2_jpg,close_png,back_1_png,1_jpg,dh_slsb_022_png,bg_slsb_012_png,1_png,2_png,3_png,4_png,5_png",
+			"keys": "description_json,bg_slsb_sb_jpg,bg_slsb_sl_jpg,scene_denglu2_jpg,close_png,back_1_png,1_jpg,dh_slsb_022_png,bg_slsb_012_png,5_png,btn_rule_png,btn_rank_png,btn_start_png,btn_start1_png",
 			"name": "preload"
 		}
 	],
@@ -52,29 +52,29 @@
 			"name": "1_jpg"
 		},
 		{
-			"name": "1_png",
-			"type": "image",
-			"url": "assets/btn/1.png"
-		},
-		{
-			"name": "2_png",
-			"type": "image",
-			"url": "assets/btn/2.png"
-		},
-		{
-			"name": "3_png",
-			"type": "image",
-			"url": "assets/btn/3.png"
-		},
-		{
-			"name": "4_png",
-			"type": "image",
-			"url": "assets/btn/4.png"
-		},
-		{
 			"name": "5_png",
 			"type": "image",
 			"url": "assets/btn/5.png"
+		},
+		{
+			"name": "btn_rule_png",
+			"type": "image",
+			"url": "assets/btn/btn_rule.png"
+		},
+		{
+			"name": "btn_rank_png",
+			"type": "image",
+			"url": "assets/btn/btn_rank.png"
+		},
+		{
+			"name": "btn_start_png",
+			"type": "image",
+			"url": "assets/btn/btn_start.png"
+		},
+		{
+			"name": "btn_start1_png",
+			"type": "image",
+			"url": "assets/btn/btn_start1.png"
 		}
 	]
 }

@@ -34,6 +34,7 @@
 		"bin-debug/utils/PopUpManager.js",
 		"bin-debug/utils/TimerUtils.js",
 		"bin-debug/utils/TipsUtils.js",
+		"bin-debug/utils/toast.js",
 		"bin-debug/utils/TweenAnim.js"
 	]
 }
