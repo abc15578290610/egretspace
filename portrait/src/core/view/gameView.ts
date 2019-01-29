@@ -52,7 +52,6 @@ module game {
 				img.y = this.RamdonArry[j].y
 			}
 			this.m_bg.visible = false;
-			this.m_group.scaleX = this.m_group.scaleY = 0.7;
 		}
 
 		private shuffle(arr) {
