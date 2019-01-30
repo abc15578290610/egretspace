@@ -9,13 +9,15 @@ class LoadingUI extends egret.Sprite implements RES.PromiseTaskReporter {
     private textField: egret.TextField;
 
     private createView(): void {
+        let _width = egret.MainContext.instance.stage.width;
+        let _height = egret.MainContext.instance.stage.height;
         this.m_load = new egret.Sprite();
         this.m_load.graphics.clear();
         this.m_load.graphics.beginFill(0x595959,1);
-        this.m_load.graphics.drawRect(0, 0, GameConfig.curWidth()/2,40);
+        this.m_load.graphics.drawRect(0, 0,_width/2,40);
         this.m_load.graphics.endFill();
-        this.m_load.x =(GameConfig.curWidth()-this.m_load.width)/2;
-        this.m_load.y =(GameConfig.curHeight()-this.m_load.height)/2;
+        this.m_load.x =(_width-this.m_load.width)/2;
+        this.m_load.y =(_height-this.m_load.height)/2;
 
         this.m_bg = new eui.Rect(0,30,0x95de64);
         this.m_bg.x=5;
