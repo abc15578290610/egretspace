@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="rankViewSkin" width="750" height="500" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
 	<e:Rect width="100%" height="100%" fillColor="0x000000" fillAlpha="0.6" ellipseWidth="10" ellipseHeight="10"/>
-	<e:Image id="m_close" source="close_1_png" y="24" width="50" height="50" x="683" visible="false"/>
-	<e:Label text="分数排行榜" y="27" fontFamily="Microsoft YaHei" horizontalCenter="0"/>
+	<e:Label text="分数排行榜" y="27" fontFamily="SimSun" horizontalCenter="0"/>
 	<e:Scroller width="100%" height="403" anchorOffsetX="0" anchorOffsetY="0" y="83" horizontalCenter="0" bounces="false">
 	<e:List id="m_list" width="100%" height="100%" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0.5" itemRendererSkinName="rankItemSkin">
 	</e:List>

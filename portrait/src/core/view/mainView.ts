@@ -20,7 +20,6 @@ module game {
 		}
 		protected addEvent(){
 			EventManager.addTouchScaleListener(this.m_start,this,this.handleEvent)
-			// this.m_start.addEventListener(egret.TouchEvent.TOUCH_TAP,this.handleEvent,this);
 			this.m_rule.addEventListener(egret.TouchEvent.TOUCH_TAP,this.handleEvent,this);
 			this.m_rank.addEventListener(egret.TouchEvent.TOUCH_TAP,this.handleEvent,this);
 		}

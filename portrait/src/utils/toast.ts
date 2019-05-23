@@ -47,8 +47,6 @@ module game {
 			this.y = h * .85;
 			this.addChild(bg);
 			bg.$anchorOffsetX = bg.width / 2;
-			// bg.$anchorOffsetY = bg.height/2;
-
 			var tx: egret.TextField = new egret.TextField;
 			tx.multiline = true;
 			tx.size = 30;
@@ -73,11 +71,8 @@ module game {
 
 			egret.Tween.get(this)
 				.to({ alpha: 1 }, 800, egret.Ease.quintOut)
-				//.to( { scaleX: 1.2, scaleY: 1.2 }, 100, egret.Ease.quintOut )
-				//.call( ()=>{ console.log( "tween tween tween" ); } ) 
-				//.to( { scaleX: 1.0, scaleY: 1.0 }, 300, egret.Ease.quintIn )
 				.wait(1600)
-				.to({ alpha: 0 }, 1200, egret.Ease.quintIn).call(() => {      /*  y: this.y - 50, */
+				.to({ alpha: 0 }, 1200, egret.Ease.quintIn).call(() => {
 					if (this.parent) {
 						this.parent.removeChild(this);
 					}

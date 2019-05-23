@@ -80,7 +80,7 @@
 		<e:Image id="m_8" width="200" height="200" scaleX="1" scaleY="1" x="400" y="400"/>
 	</e:Group>
 	<e:Group x="280" verticalCenter="0">
-		<e:Label id="m_timer" text="时间:" x="0" y="0" fontFamily="Microsoft YaHei"/>
-		<e:Label id="m_step" text="步数:" x="0" y="78" fontFamily="Microsoft YaHei"/>
+		<e:Label id="m_timer" text="时间:" x="0" y="0" fontFamily="SimSun"/>
+		<e:Label id="m_step" text="步数:" x="0" y="78" fontFamily="SimSun"/>
 	</e:Group>
 </e:Skin>
