@@ -22,17 +22,12 @@ module game {
 			var factor: number = 50;
 
 			//创建world
-			var world: p2.World = new p2.World();
+			var world: p2.World = World.initWorld();
 			world.sleepMode = p2.World.ISLAND_SLEEPING;
 
 			//创建plane
-			var planeShape: p2.Plane = new p2.Plane();
-			var planeBody: p2.Body = new p2.Body();
-			// planeBody.position[1]=0.4;//设置y
-			console.log(planeBody.position)
-			planeBody.angle=0.4;//0.4*50=20度
-			planeBody.addShape(planeShape);
-			planeBody.displays = [];
+			var planeBody =  World.createPlaneBody()
+			
 			world.addBody(planeBody);
 
 			egret.Ticker.getInstance().register(function(dt) {
@@ -62,41 +57,46 @@ module game {
 			//鼠标点击添加刚体
 			this.stage.addEventListener(egret.TouchEvent.TOUCH_BEGIN, addOneBox, this);
 			var self = this;
-
 			function addOneBox(e: egret.TouchEvent): void {
 				var positionX: number = Math.floor(e.stageX / factor);
 				var positionY: number = Math.floor((egret.MainContext.instance.stage.stageHeight - e.stageY) / factor);
 				var display: egret.DisplayObject;
-				if (Math.random() > 0.5) {
+				// if (Math.random() > 0.5) {
 					//添加方形刚体
 					//var boxShape: p2.Shape = new p2.Rectangle(2, 1);
-					var boxShape: p2.Shape = new p2.Box({width: 2, height: 1});
-					var boxBody: p2.Body = new p2.Body({ mass: 1, position: [positionX, positionY], angularVelocity: 1 });
-					boxBody.addShape(boxShape);
-					world.addBody(boxBody);
-					display = self.createBox((<p2.Box>boxShape).width * factor,(<p2.Box>boxShape).height * factor);
+					// var boxShape: p2.Shape = new p2.Box({width: 2, height: 1});
+					// var boxBody: p2.Body = new p2.Body({ mass: 1, position: [positionX, positionY], angularVelocity: 1 });
+					// boxBody.addShape(boxShape);
+
+					// display = self.createBox((<p2.Box>boxShape).width * factor,(<p2.Box>boxShape).height * factor);
+					var button = new Mbutton()
+					button.x = e.stageX;
+					button.y = e.stageY;
+					world.addBody(World.createBoxBody(button,self,{ mass: 1,angularVelocity: 1}))
 
 					// display.width = (<p2.Box>boxShape).width * factor;
 					// display.height = (<p2.Box>boxShape).height * factor;
-				}
-				else {
+				// }
+				// else {
 					//添加圆形刚体
 					//var boxShape: p2.Shape = new p2.Circle(1);
-					var boxShape: p2.Shape = new p2.Circle({ radius: 1 });
-					var boxBody: p2.Body = new p2.Body({ mass: 1, position: [positionX, positionY] });
-					boxBody.addShape(boxShape);
-					world.addBody(boxBody);
-					display = self.createBall((<p2.Circle>boxShape).radius*factor);
+					// var boxShape: p2.Shape = new p2.Circle({ radius: 1 });
+					// var boxBody: p2.Body = new p2.Body({ mass: 1, position: [positionX, positionY],gravityScale:0});
+					// boxBody.addShape(boxShape);
+					// world.addBody(boxBody);
+					// boxBody.on("wakeup",function(){
+					// 	console.log("碰撞唤醒")
+					// })
+					// display = self.createBall((<p2.Circle>boxShape).radius*factor);
 
 					// display.width = (<p2.Circle>boxShape).radius * 2 * factor;
 					// display.height = (<p2.Circle>boxShape).radius * 2 * factor;
-				}
+				// }
+				// display.anchorOffsetX = display.width / 2;
+				// display.anchorOffsetY = display.height / 2;
 
-				display.anchorOffsetX = display.width / 2;
-				display.anchorOffsetY = display.height / 2;
-
-				boxBody.displays = [display];
-				self.addChild(display);
+				// boxBody.displays = [display];
+				// self.addChild(display);
 			}
 		}
 		protected addEvent(){
