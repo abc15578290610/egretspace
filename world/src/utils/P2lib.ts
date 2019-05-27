@@ -32,7 +32,7 @@ module game {
 			return boxBody
 		}
 
-				/**
+		/**
 		 * 创建圆形刚体
 		 * @param display 绑定显示对象
 		 * @param parent 父容器
@@ -68,6 +68,18 @@ module game {
 			planeBody.addShape(planeShape);
 			planeBody.displays = [];
 			return planeBody
+		}
+		/**
+		 * 白鹭x坐标转换为p2物理引擎x坐标
+		 */
+		public static Xfix(x:number){
+			return Math.floor(x / P2lib.factor)
+		}
+		/**
+		 * 白鹭y坐标转换为p2物理引擎y坐标
+		 */
+		public static Yfix(y:number){
+			return Math.floor((egret.MainContext.instance.stage.stageHeight - y) / P2lib.factor);
 		}
 	}
 }

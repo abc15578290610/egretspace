@@ -58,7 +58,6 @@ module game {
 			function addOneBox(e: egret.TouchEvent): void {
 				var positionX: number = Math.floor(e.stageX / factor);
 				var positionY: number = Math.floor((egret.MainContext.instance.stage.stageHeight - e.stageY) / factor);
-				var display: egret.DisplayObject;
 				if (Math.random() > 0.8) {
 					var button = new Mbutton()
 					button.x = e.stageX;
