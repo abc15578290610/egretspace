@@ -90,29 +90,32 @@ module game {
 			var Ball = new wheel()
 			Ball.x = 500;
 			Ball.y = 720;
-			console.log(Ball.width)
+
 			this._ball2 = P2lib.createCircleBody(Ball,self,{mass: 1})
 			world.addBody(this._ball2)
 
 			// var spring1 = new p2.DistanceConstraint(car,this._ball1,{
-			// 	distance:0.1,
+			// 	distance:1.5,
 			// 	maxForce:200
 			// })
 			// var spring2 = new p2.DistanceConstraint(car,this._ball2,{
-			// 	distance:0.1,
+			// 	distance:1.5,
 			// 	maxForce:200
 			// })
-
+			// world.addConstraint(spring1);
+            // world.addConstraint(spring2);
 			var revoluteBack = new p2.RevoluteConstraint(car, this._ball1, {
-                localPivotA: [1.5, -0.9],
-                localPivotB: [0, 0],
-                collideConnected: false
+                localPivotA: [1.5, -0.9],//设置相对于A锚点
+                localPivotB: [0, 0],//设置相对于B锚点
+                collideConnected: true
             });
             var revoluteFront = new p2.RevoluteConstraint(car, this._ball2, {
                 localPivotA: [-0.5, -0.9], // Where to hinge second wheel on the chassis
                 localPivotB: [0, 0],      // Where the hinge is in the wheel (center)
-                collideConnected: false
+                collideConnected: true
             });
+			revoluteFront.enableMotor();//开启马达
+			revoluteFront.setMotorSpeed( 5);//设置马达转速为5
 			world.addConstraint(revoluteBack);
             world.addConstraint(revoluteFront);
 
@@ -129,7 +132,7 @@ module game {
 				EventManager.dispatchEventWith(EventNotify.SHOW_RULE,false,{dd:11});
 			}else if(target == this.m_start){
 				// this._ball1.applyForce([30,0],[0,0])
-				this._ball2.applyForce([1300,0],[0,0])
+				this._ball2.applyForce([30,0],[0,0])
 				// obj.getBodyByID(99).applyForce([1,0],[0,0])
 				// var spring = new p2.DistanceConstraint()
 				// var spring = new p2.Spring()
