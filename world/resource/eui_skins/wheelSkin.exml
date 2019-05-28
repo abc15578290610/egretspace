@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="wheelSkin" width="40" height="40" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="wheel_png" height="100%" width="100%" x="0" y="0"/>
+</e:Skin>

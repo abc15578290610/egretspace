@@ -6,6 +6,8 @@ module game {
 		private m_rank:eui.Button;//排行榜
 		private m_song:eui.Label;//诗词
 		private static _instance:MainView;
+		private _ball1= null;
+		private _ball2= null;
 		public static getInstance():MainView  
 		{  
 			if(!this._instance)  
@@ -26,6 +28,7 @@ module game {
 
 			//创建plane
 			var planeBody =  P2lib.createPlaneBody()
+			// planeBody.angle=0.2
 			world.addBody(planeBody);
 
 			egret.Ticker.getInstance().register(function(dt) {
@@ -51,29 +54,72 @@ module game {
 					}
 				}
 			}, this);
+			var self = this;
 
 			//鼠标点击添加刚体
-			this.stage.addEventListener(egret.TouchEvent.TOUCH_BEGIN, addOneBox, this);
-			var self = this;
-			function addOneBox(e: egret.TouchEvent): void {
-				var positionX: number = Math.floor(e.stageX / factor);
-				var positionY: number = Math.floor((egret.MainContext.instance.stage.stageHeight - e.stageY) / factor);
-				if (Math.random() > 0.8) {
-					var button = new Mbutton()
-					button.x = e.stageX;
-					button.y = e.stageY;
-					world.addBody(P2lib.createBoxBody(button,self,{ mass: 1,angularVelocity: 1}))
-				}else{
-					var Ball = GameLib.createBall(50)
-					Ball.x = e.stageX;
-					Ball.y = e.stageY;
-					world.addBody(P2lib.createCircleBody(Ball,self,{ mass: 1,angularVelocity: 1}))
-				}
-			}
+			// this.stage.addEventListener(egret.TouchEvent.TOUCH_BEGIN, addOneBox, this);
+			// function addOneBox(e: egret.TouchEvent): void {
+			// 	var positionX: number = Math.floor(e.stageX / factor);
+			// 	var positionY: number = Math.floor((egret.MainContext.instance.stage.stageHeight - e.stageY) / factor);
+			// 	if (Math.random() > 0.8) {
+			// 		var button = new Mbutton()
+			// 		button.x = e.stageX;
+			// 		button.y = e.stageY;
+			// 		world.addBody(P2lib.createBoxBody(button,self,{ mass: 1,angularVelocity: 1}))
+			// 	}else{
+			// 		var Ball = GameLib.createBall(50)
+			// 		Ball.x = e.stageX;
+			// 		Ball.y = e.stageY;
+			// 		world.addBody(P2lib.createCircleBody(Ball,self,{ mass: 1,angularVelocity: 1}))
+			// 	}
+			// }
+
+
+			var button = new Mbutton()
+			button.x = 550;
+			button.y = 720-(button.height/2);
+			var car = P2lib.createBoxBody(button,self,{ mass: 1,angularVelocity: 1})
+			world.addBody(car)
+
+			var Ball1 = new wheel()
+			Ball1.x = 600;
+			Ball1.y = 720;
+			this._ball1 = P2lib.createCircleBody(Ball1,self,{mass: 1})
+			world.addBody(this._ball1)
+
+			var Ball = new wheel()
+			Ball.x = 500;
+			Ball.y = 720;
+			console.log(Ball.width)
+			this._ball2 = P2lib.createCircleBody(Ball,self,{mass: 1})
+			world.addBody(this._ball2)
+
+			// var spring1 = new p2.DistanceConstraint(car,this._ball1,{
+			// 	distance:0.1,
+			// 	maxForce:200
+			// })
+			// var spring2 = new p2.DistanceConstraint(car,this._ball2,{
+			// 	distance:0.1,
+			// 	maxForce:200
+			// })
+
+			var revoluteBack = new p2.RevoluteConstraint(car, this._ball1, {
+                localPivotA: [1.5, -0.9],
+                localPivotB: [0, 0],
+                collideConnected: false
+            });
+            var revoluteFront = new p2.RevoluteConstraint(car, this._ball2, {
+                localPivotA: [-0.5, -0.9], // Where to hinge second wheel on the chassis
+                localPivotB: [0, 0],      // Where the hinge is in the wheel (center)
+                collideConnected: false
+            });
+			world.addConstraint(revoluteBack);
+            world.addConstraint(revoluteFront);
+
 		}
 		protected addEvent(){
 			EventManager.addTouchScaleListener(this.m_start,this,this.handleEvent)
-			// this.m_start.addEventListener(egret.TouchEvent.TOUCH_TAP,this.handleEvent,this);
+			this.m_start.addEventListener(egret.TouchEvent.TOUCH_TAP,this.handleEvent,this);
 			this.m_rule.addEventListener(egret.TouchEvent.TOUCH_TAP,this.handleEvent,this);
 			this.m_rank.addEventListener(egret.TouchEvent.TOUCH_TAP,this.handleEvent,this);
 		}
@@ -82,7 +128,12 @@ module game {
 			if(target == this.m_rule){
 				EventManager.dispatchEventWith(EventNotify.SHOW_RULE,false,{dd:11});
 			}else if(target == this.m_start){
-				EventManager.dispatchEventWith(EventNotify.SHOW_GAME,false,{dd:11});
+				// this._ball1.applyForce([30,0],[0,0])
+				this._ball2.applyForce([1300,0],[0,0])
+				// obj.getBodyByID(99).applyForce([1,0],[0,0])
+				// var spring = new p2.DistanceConstraint()
+				// var spring = new p2.Spring()
+				// EventManager.dispatchEventWith(EventNotify.SHOW_GAME,false,{dd:11});
 			}else if(target == this.m_rank){
 				EventManager.dispatchEventWith(EventNotify.SHOW_RANK,false,{dd:11});
 			}

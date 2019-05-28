@@ -14,7 +14,7 @@
 		"bin-debug/core/base/BaseUI.js",
 		"bin-debug/core/base/ElementUI.js",
 		"bin-debug/core/base/PanelUI.js",
-		"bin-debug/core/view/ruleView.js",
+		"bin-debug/core/view/wheel.js",
 		"bin-debug/Platform.js",
 		"bin-debug/ThemeAdapter.js",
 		"bin-debug/AssetAdapter.js",
@@ -24,6 +24,7 @@
 		"bin-debug/core/view/Mbutton.js",
 		"bin-debug/core/view/RankView.js",
 		"bin-debug/core/view/resultView.js",
+		"bin-debug/core/view/ruleView.js",
 		"bin-debug/Collision.js",
 		"bin-debug/global/GameConfig.js",
 		"bin-debug/main/GameLayerManager.js",
@@ -32,10 +33,11 @@
 		"bin-debug/utils/EventCustomMgr.js",
 		"bin-debug/utils/EventManager.js",
 		"bin-debug/utils/EventNotify.js",
+		"bin-debug/utils/GameLib.js",
+		"bin-debug/utils/P2lib.js",
 		"bin-debug/utils/PopUpManager.js",
 		"bin-debug/utils/TimerUtils.js",
 		"bin-debug/utils/TipsUtils.js",
-		"bin-debug/utils/TweenAnim.js",
-		"bin-debug/utils/World.js"
+		"bin-debug/utils/TweenAnim.js"
 	]
 }

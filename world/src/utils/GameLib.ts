@@ -1,4 +1,5 @@
 module game {
+    /**白鹭游戏库，不依赖其他第三方库 */
 	export class GameLib {
 		public constructor() {
 		}

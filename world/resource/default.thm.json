@@ -6,7 +6,8 @@
 		"resource/eui_skins/rankItemSkin.exml",
 		"resource/eui_skins/rankViewSkin.exml",
 		"resource/eui_skins/resultViewSkin.exml",
-		"resource/eui_skins/ruleViewSkin.exml"
+		"resource/eui_skins/ruleViewSkin.exml",
+		"resource/eui_skins/wheelSkin.exml"
 	],
 	"path": "resource/default.thm.json"
 }
