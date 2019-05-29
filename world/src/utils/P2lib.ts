@@ -19,8 +19,8 @@ module game {
 			var factor = P2lib.factor;
 			display.anchorOffsetX = display.width / 2;
 			display.anchorOffsetY = display.height / 2;
-			var positionX: number = Math.floor(display.x / factor);
-			var positionY: number = Math.floor((egret.MainContext.instance.stage.stageHeight - display.y) / factor);
+			var positionX: number = display.x / factor;
+			var positionY: number = (egret.MainContext.instance.stage.stageHeight - display.y) / factor;
 			var boxShape: p2.Shape = new p2.Box({width:display.width/factor, height:display.height/factor});
 			if(Option){
 				Option.position=[positionX, positionY]
@@ -42,8 +42,8 @@ module game {
 			var factor = P2lib.factor;
 			display.anchorOffsetX = display.width / 2;
 			display.anchorOffsetY = display.height / 2;
-			var positionX: number = Math.floor(display.x / factor);
-			var positionY: number = Math.floor((egret.MainContext.instance.stage.stageHeight - display.y) / factor);
+			var positionX: number = display.x / factor;
+			var positionY: number = (egret.MainContext.instance.stage.stageHeight - display.y) / factor;
 			var boxShape: p2.Circle = new p2.Circle({radius:display.width/factor/2});
 			console.log(display.width,"----",boxShape.radius)
 			if(Option){

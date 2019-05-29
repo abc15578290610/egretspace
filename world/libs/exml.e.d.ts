@@ -10,3 +10,5 @@ declare class resultViewSkin extends eui.Skin{
 }
 declare class ruleViewSkin extends eui.Skin{
 }
+declare class wheelSkin extends eui.Skin{
+}
