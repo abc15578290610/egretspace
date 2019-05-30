@@ -82,5 +82,21 @@ module game {
 		public static Yfix(y:number){
 			return Math.floor((egret.MainContext.instance.stage.stageHeight - y) / P2lib.factor);
 		}
+		/**在指定坐标创建一个刚体*/
+		public static addOneBox(x:number,y:number): void {
+				var positionX: number = x/P2lib.factor;
+				var positionY: number = (egret.MainContext.instance.stage.stageHeight - y) / P2lib.factor;
+				// if (Math.random() > 0.8) {
+				// 	var button = new Mbutton()
+				// 	button.x = e.stageX;
+				// 	button.y = e.stageY;
+				// 	world.addBody(P2lib.createBoxBody(button,self,{ mass: 1,angularVelocity: 1}))
+				// }else{
+					var Ball = GameLib.createBall(50)
+					Ball.x = x;
+					Ball.y = y;
+					P2lib.defourWorld.addBody(P2lib.createCircleBody(Ball,Ball.parent,{ mass: 1,angularVelocity: 1}))
+				// }
+		}
 	}
 }

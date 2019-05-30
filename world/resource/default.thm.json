@@ -1,6 +1,7 @@
 {
 	"autoGenerateExmlsList": true,
 	"exmls": [
+		"resource/eui_skins/backWheel.exml",
 		"resource/eui_skins/MButton.exml",
 		"resource/eui_skins/mainViewSkin.exml",
 		"resource/eui_skins/rankItemSkin.exml",
