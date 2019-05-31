@@ -45,10 +45,10 @@ module game {
 			var positionX: number = display.x / factor;
 			var positionY: number = (egret.MainContext.instance.stage.stageHeight - display.y) / factor;
 			var boxShape: p2.Circle = new p2.Circle({radius:display.width/factor/2});
-			console.log(display.width,"----",boxShape.radius)
 			if(Option){
 				Option.position=[positionX, positionY]
 			}
+			console.log(positionX, positionY)
 			var boxBody: p2.Body = new p2.Body(Option);
 			boxBody.addShape(boxShape);
 			boxBody.displays = [display];
@@ -83,7 +83,7 @@ module game {
 			return Math.floor((egret.MainContext.instance.stage.stageHeight - y) / P2lib.factor);
 		}
 		/**在指定坐标创建一个刚体*/
-		public static addOneBox(x:number,y:number): void {
+		public static addOneBox(x:number,y:number,parent:egret.DisplayObjectContainer): void {
 				var positionX: number = x/P2lib.factor;
 				var positionY: number = (egret.MainContext.instance.stage.stageHeight - y) / P2lib.factor;
 				// if (Math.random() > 0.8) {
@@ -95,7 +95,7 @@ module game {
 					var Ball = GameLib.createBall(50)
 					Ball.x = x;
 					Ball.y = y;
-					P2lib.defourWorld.addBody(P2lib.createCircleBody(Ball,Ball.parent,{ mass: 1,angularVelocity: 1}))
+					P2lib.defourWorld.addBody(P2lib.createCircleBody(Ball,parent,{ mass: 1,angularVelocity: 1}))
 				// }
 		}
 	}

@@ -6,12 +6,12 @@ module game {
 		private m_rank:eui.Button;//排行榜
 		private static _instance:MainView;
 		/**前轮 */
-		private _ball1:p2.Body= null;
+		private beforewheel:p2.Body= null;
 
 		/**后轮 */
-		private _ball2:p2.Body= null;
+		private backwheel:p2.Body= null;
 		private _car:p2.Body=null;
-		private _revoluteBack:p2.RevoluteConstraint;
+		private _revoluteBack:p2.PrismaticConstraint;
 		public static getInstance():MainView  
 		{  
 			if(!this._instance)  
@@ -28,9 +28,11 @@ module game {
 			//创建world
 			var world: p2.World = P2lib.initWorld();
 			world.sleepMode = p2.World.ISLAND_SLEEPING;
-
+			world.defaultContactMaterial.friction = 100;
 			//创建plane平面
 			var planeBody =  P2lib.createPlaneBody()
+			planeBody.shapes[0].collisionGroup=GameConfig.collisionGroup.GROUND;
+			planeBody.shapes[0].collisionMask=GameConfig.collisionGroup.CAR|GameConfig.collisionGroup.WHEEL
 			world.addBody(planeBody);
 
 			egret.Ticker.getInstance().register(function(dt) {
@@ -60,40 +62,45 @@ module game {
 			var button = new Mbutton()
 			button.x = 550;
 			button.y = 720-(button.height/2);
-			var car = P2lib.createBoxBody(button,self,{ mass: 0.1,angularVelocity: 1})
+			var car = P2lib.createBoxBody(button,self,{ mass:1})
+			car.shapes[0].collisionGroup=GameConfig.collisionGroup.CAR;
+
 			world.addBody(car)
 			this._car = car;
 
-			var Ball1 = new wheel()
-			Ball1.x = 600;
-			Ball1.y = 720;
-			this._ball1 = P2lib.createCircleBody(Ball1,self,{mass: 0.1})
-			world.addBody(this._ball1)
+			var beforewheel = new wheel()
+			beforewheel.x = 600;
+			beforewheel.y = 720;
+			this.beforewheel = P2lib.createCircleBody(beforewheel,self,{mass:1})
+			this.beforewheel.shapes[0].collisionGroup=GameConfig.collisionGroup.WHEEL;
+			world.addBody(this.beforewheel)
 
-			var Ball = new backwheels()
-			Ball.x = 500;
-			Ball.y = 720;
+			var backwheel = new backwheels()
+			backwheel.x = 500;
+			backwheel.y = 720;
 
-			this._ball2 = P2lib.createCircleBody(Ball,self,{mass: 0.1})
-			this._ball2.damping=0.5
-			world.addBody(this._ball2)
-
-			var revoluteBack = new p2.RevoluteConstraint(car, this._ball2, {
-                localPivotA: [-0.5, -0.5],//设置相对于A锚点
-                localPivotB: [0, 0],//设置相对于B锚点
-                collideConnected: false
+			this.backwheel = P2lib.createCircleBody(backwheel,self,{mass:1})
+			this.backwheel.shapes[0].collisionGroup=GameConfig.collisionGroup.WHEEL;
+			world.addBody(this.backwheel)
+			this.beforewheel.shapes[0].collisionMask=this.backwheel.shapes[0].collisionMask=GameConfig.collisionGroup.GROUND
+			car.shapes[0].collisionMask=GameConfig.collisionGroup.GROUND
+			var revoluteBack = new p2.PrismaticConstraint(car, this.backwheel, {
+                localAnchorA: [-1, -0.5],//设置相对于A锚点
+                localAnchorB: [0, 0],//设置相对于B锚点
+                disableRotationalLock:true
             });
-            var revoluteFront = new p2.RevoluteConstraint(car, this._ball1, {
-                localPivotA: [1.5, -0.5], // Where to hinge second wheel on the chassis
-                localPivotB: [0, 0],      // Where the hinge is in the wheel (center)
-                collideConnected: false
+            var revoluteFront = new p2.PrismaticConstraint(car, this.beforewheel, {
+                localAnchorA: [1.5,-0.5], // Where to hinge second wheel on the chassis
+                localAnchorB: [0, 0],      // Where the hinge is in the wheel (center)
+                disableRotationalLock:true
             });
-			var revolutewell = new p2.DistanceConstraint(this._ball1, this._ball2);
-			revoluteBack.enableMotor();//开启马达
+			var wheelConstraint = new p2.DistanceConstraint(this.beforewheel,this.backwheel)
+			revoluteBack.setLimits(0,0.6);//设置bodyB可以位移的最大值
+            revoluteFront.setLimits(0,0.6);
 			this._revoluteBack = revoluteBack;
             world.addConstraint(revoluteFront);
 			world.addConstraint(revoluteBack);
-			world.addConstraint(revolutewell);
+			world.addConstraint(wheelConstraint);
 			revoluteBack.setStiffness(90)
 			revoluteFront.setStiffness(70)
 		}
@@ -103,21 +110,22 @@ module game {
 			document.onkeydown=function(event){
 				var e = event || window.event || arguments.callee.caller.arguments[0];
 				if(e && e.keyCode==37){ // 按 left 
-					_this1._revoluteBack.setMotorSpeed(-10);
-					_this1._ball2.damping=0.1
-					_this1._ball2.applyForce([-10,0],[0,0])
+					_this1.backwheel.damping=0.1
+					_this1.backwheel.angularForce+=_this1.speed;
+					// _this1.backwheel.applyForce([-10,0],[0,0])
 				}
 				if(e && e.keyCode==38){ //按up
 					//要做的事情
 				}            
 				if(e && e.keyCode==39){ // right
-					_this1._ball2.damping=0.1
-					_this1._ball2.applyForce([10,0],[0,0])
-					_this1._revoluteBack.setMotorSpeed(10);
+					_this1.backwheel.damping=0.1
+					_this1.backwheel.angularForce-=_this1.speed;
+					// _this1.backwheel.applyForce([10,0],[0,0])
 				}
 				if(e && e.keyCode==40){ // down
-					_this1._revoluteBack.setMotorSpeed(0);
-					_this1._ball2.damping=0.999999
+					_this1.backwheel.damping=0.999999
+					_this1.backwheel.angularForce=0;
+					_this1.backwheel.angularVelocity=0;
 					// _this1.revoluteFront.setMotorSpeed(0)
 				}
 			}; 

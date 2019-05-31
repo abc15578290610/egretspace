@@ -32,6 +32,13 @@ module GameConfig {
         bigSize: 36//大型字体大小
     }
 
+    /**碰撞组 */
+    export var collisionGroup = {
+        GROUND:1,//地面
+        WHEEL: 2,//轮子
+        CAR: 3,//正常字体大小
+    }
+
     //判断是否为微信
     export function isWeiXin(): boolean {
         var ua = window.navigator.userAgent.toLowerCase();
