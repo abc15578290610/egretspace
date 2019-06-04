@@ -1,22 +1,28 @@
 module game {
 	/**宽40，高40 */
-	export class wheel extends eui.Component{
-		public constructor() {
-			super()
+	export class wheel extends PCircle{
+		public constructor(option?) {
+			super(option)
 			this.skinName='wheelSkin';
-			this.anchorOffsetX = this.width/2;
-			this.anchorOffsetY = this.height/2
+		}
+		protected init(){
+			super.init();
+			this.shape.collisionGroup=gameData.WHEEL;
+			this.shape.collisionMask=gameData.GROUND
 		}
 	}
 }
 module game {
 	/**宽40，高40 */
-	export class backwheels extends eui.Component{
-		public constructor() {
-			super()
+	export class backwheels extends PCircle{
+		public constructor(option?) {
+			super(option)
 			this.skinName='backWheel';
-			this.anchorOffsetX = this.width/2;
-			this.anchorOffsetY = this.height/2
+		}
+		protected init(){
+			super.init();
+			this.shape.collisionGroup=gameData.WHEEL;
+			this.shape.collisionMask=gameData.GROUND|gameData.WHEEL
 		}
 	}
 }

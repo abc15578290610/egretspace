@@ -1,4 +1,19 @@
 /**
+* 游戏枚举配置
+* by zhongqing
+* (c) copyright 2018 - 2019
+* All Rights Reserved.
+*/
+enum gameData{
+        Plant,
+        /**地面 */
+        GROUND,
+        /**车轮 */
+        WHEEL,
+        /**车身 */
+        CAR,
+}
+/**
 * 游戏配置文件
 * by zhongqing
 * (c) copyright 2018 - 2019
@@ -31,14 +46,6 @@ module GameConfig {
         normalSize: 24,//正常字体大小
         bigSize: 36//大型字体大小
     }
-
-    /**碰撞组 */
-    export var collisionGroup = {
-        GROUND:1,//地面
-        WHEEL: 2,//轮子
-        CAR: 3,//正常字体大小
-    }
-
     //判断是否为微信
     export function isWeiXin(): boolean {
         var ua = window.navigator.userAgent.toLowerCase();
