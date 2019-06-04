@@ -30,7 +30,6 @@ module game {
 			boxBody.addShape(this._shape);
 			this._body=boxBody;
 			boxBody.displays = [this];
-			this.addToWorld();
 		}
 		protected addToWorld(){
 			this._world.addBody(this._body);
@@ -42,6 +41,7 @@ module game {
 			return this._body;
 		}
 		protected addEvent(){
+			this.addEventListener(egret.Event.ADDED_TO_STAGE,this.addToWorld,this);
 		}
 		protected removeEvent(){
 			

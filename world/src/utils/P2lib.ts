@@ -9,7 +9,6 @@ module game {
 
 		public initWorld():p2.World{
 			if(!this.defourWorld){
-				console.log("创建")
 				this.defourWorld = new p2.World();
 			}
 			return this.defourWorld

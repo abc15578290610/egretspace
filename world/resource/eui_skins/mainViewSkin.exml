@@ -7,5 +7,4 @@
 	<e:Button id="m_rule" label="游戏规则" y="324" skinName="MButton" horizontalCenter="0" height="85"/>
 	<e:Button id="m_rank" label="排行榜" y="440" skinName="MButton" horizontalCenter="0" height="85"/>
 	<e:Label id="m_song" text="" x="176" y="124" fontFamily="KaiTi" width="294" height="341" textColor="0x0f0e0e" size="16" textAlign="center" alpha="0.6"/>
-	<game:backwheels id="_wheel" width="40" height="40" x="668" y="175" skinName="backWheel" anchorOffsetX="20" anchorOffsetY="20"/>
 </e:Skin>

@@ -7,12 +7,10 @@ module game {
 		private static _instance:MainView;
 		/**前轮 */
 		private beforewheel:p2.Body= null;
-
 		/**后轮 */
 		private backwheel:p2.Body= null;
-		private _car:p2.Body=null;
+		private _car:Car=null;
 		private _revoluteBack:p2.PrismaticConstraint;
-		private _wheel:backwheels
 		public static getInstance():MainView  
 		{  
 			if(!this._instance)  
@@ -48,23 +46,15 @@ module game {
 						box.x = boxBody.position[0] * P2lib.factor;
 						box.y = stageHeight - boxBody.position[1] * P2lib.factor;
 						box.rotation = 360 - (boxBody.angle + boxBody.shapes[0].angle) * 180 / Math.PI;
-						// if (boxBody.sleepState == p2.Body.SLEEPING) {
-						// 	box.alpha = 0.5;
-						// }
-						// else {
-						// 	box.alpha = 1;
-						// }
 					}
 				}
 			}, this);
 			var self = this;
 
-			var button = new Mbutton()
-			button.x = 550;
-			button.y = 720-(button.height/2);
-			var car = P2lib.gameWorld().createBoxBody(button,self,{ mass:1})
-			car.shapes[0].collisionGroup=gameData.CAR;
-			world.addBody(car)
+			var car = new Car({mass:1})
+			car.x = 550;
+			car.y = 720-(car.height/2);
+			this.addChild(car)
 			this._car = car;
 
 			var beforewheel = new wheel({mass:1})
@@ -79,13 +69,12 @@ module game {
 			this.addChild(backwheel);
 			this.backwheel = backwheel.body;
 
-			car.shapes[0].collisionMask=gameData.GROUND
-			var revoluteBack = new p2.PrismaticConstraint(car, this.backwheel, {
+			var revoluteBack = new p2.PrismaticConstraint(car.body, this.backwheel, {
                 localAnchorA: [-1, -0.5],//设置相对于A锚点
                 localAnchorB: [0, 0],//设置相对于B锚点
                 disableRotationalLock:true
             });
-            var revoluteFront = new p2.PrismaticConstraint(car, this.beforewheel, {
+            var revoluteFront = new p2.PrismaticConstraint(car.body, this.beforewheel, {
                 localAnchorA: [1.5,-0.5], // Where to hinge second wheel on the chassis
                 localAnchorB: [0, 0],      // Where the hinge is in the wheel (center)
                 disableRotationalLock:true

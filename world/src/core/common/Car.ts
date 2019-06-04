@@ -2,12 +2,12 @@ module game {
 	export class Car extends PBox{
 		public constructor(option?) {
 			super(option)
-			this.skinName='backWheel';
+			this.skinName='carSkin';
 		}
 		protected init(){
 			super.init();
-			this.shape.collisionGroup=gameData.WHEEL;
-			this.shape.collisionMask=gameData.GROUND|gameData.WHEEL
+			this.shape.collisionGroup=gameData.CAR;
+			this.shape.collisionMask=gameData.GROUND;
 		}
 	}
 }
