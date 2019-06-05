@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="gameSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:game="game.*">
+	<game:backwheels width="40" height="40" x="221" y="59" skinName="backWheel"/>
+</e:Skin>

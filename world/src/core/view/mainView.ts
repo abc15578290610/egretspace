@@ -5,12 +5,7 @@ module game {
 		private m_rule:eui.Button;//游戏规则
 		private m_rank:eui.Button;//排行榜
 		private static _instance:MainView;
-		/**前轮 */
-		private beforewheel:p2.Body= null;
-		/**后轮 */
-		private backwheel:p2.Body= null;
-		private _car:Car=null;
-		private _revoluteBack:p2.PrismaticConstraint;
+
 		public static getInstance():MainView  
 		{  
 			if(!this._instance)  
@@ -26,11 +21,7 @@ module game {
 			var world: p2.World = P2lib.gameWorld().initWorld();
 			world.sleepMode = p2.World.ISLAND_SLEEPING;
 			world.defaultContactMaterial.friction = 100;
-			//创建plane平面
-			var planeBody =  P2lib.gameWorld().createPlaneBody()
-			planeBody.shapes[0].collisionGroup=gameData.GROUND;
-			planeBody.shapes[0].collisionMask=gameData.CAR|gameData.WHEEL
-			world.addBody(planeBody);
+
 
 			egret.Ticker.getInstance().register(function(dt) {
 				if (dt < 10||dt > 1000) {
@@ -49,69 +40,24 @@ module game {
 					}
 				}
 			}, this);
-			var self = this;
-
-			var car = new Car({mass:1})
-			car.x = 550;
-			car.y = 720-(car.height/2);
-			this.addChild(car)
-			this._car = car;
-
-			var beforewheel = new wheel({mass:1})
-			beforewheel.x = 600;
-			beforewheel.y = 720;
-			this.addChild(beforewheel);
-			this.beforewheel = beforewheel.body;
-
-			var backwheel = new backwheels({mass:1})
-			backwheel.x = 500;
-			backwheel.y = 720;
-			this.addChild(backwheel);
-			this.backwheel = backwheel.body;
-
-			var revoluteBack = new p2.PrismaticConstraint(car.body, this.backwheel, {
-                localAnchorA: [-1, -0.5],//设置相对于A锚点
-                localAnchorB: [0, 0],//设置相对于B锚点
-                disableRotationalLock:true
-            });
-            var revoluteFront = new p2.PrismaticConstraint(car.body, this.beforewheel, {
-                localAnchorA: [1.5,-0.5], // Where to hinge second wheel on the chassis
-                localAnchorB: [0, 0],      // Where the hinge is in the wheel (center)
-                disableRotationalLock:true
-            });
-			var wheelConstraint = new p2.DistanceConstraint(this.beforewheel,this.backwheel)
-			revoluteBack.setLimits(0,0.5);//设置bodyB可以位移的最大值
-            revoluteFront.setLimits(0,0.5);
-			this._revoluteBack = revoluteBack;
-            world.addConstraint(revoluteFront);
-			world.addConstraint(revoluteBack);
-			world.addConstraint(wheelConstraint);
-			revoluteBack.setStiffness(90)
-			revoluteFront.setStiffness(70)
 		}
-		private speed=50
 		protected addEvent(){
 			var _this1 = this;
 			document.onkeydown=function(event){
 				var e = event || window.event || arguments.callee.caller.arguments[0];
 				if(e && e.keyCode==37){ // 按 left 
-					_this1.backwheel.damping=0.1
-					_this1.backwheel.angularForce+=_this1.speed;
+
 				}
 				if(e && e.keyCode==38){ //按up
 					//要做的事情
 				}            
 				if(e && e.keyCode==39){ // right
-					_this1.backwheel.damping=0.1
-					_this1.backwheel.angularForce-=_this1.speed;
+
 				}
 				if(e && e.keyCode==40){ // down
-					_this1.backwheel.damping=0.999999
-					_this1.backwheel.angularForce=0;
-					_this1.backwheel.angularVelocity=0;
+
 				}
 			}; 
-			EventManager.addTouchScaleListener(this.m_start,this,this.handleEvent)
 			this.m_start.addEventListener(egret.TouchEvent.TOUCH_TAP,this.handleEvent,this);
 			this.m_rule.addEventListener(egret.TouchEvent.TOUCH_TAP,this.handleEvent,this);
 			this.m_rank.addEventListener(egret.TouchEvent.TOUCH_TAP,this.handleEvent,this);
@@ -121,7 +67,7 @@ module game {
 			if(target == this.m_rule){
 				EventManager.dispatchEventWith(EventNotify.SHOW_RULE,false,{dd:11});
 			}else if(target == this.m_start){
-				// EventManager.dispatchEventWith(EventNotify.SHOW_GAME,false,{dd:11});
+				EventManager.dispatchEventWith(EventNotify.SHOW_GAME,false,{dd:11});
 			}else if(target == this.m_rank){
 				EventManager.dispatchEventWith(EventNotify.SHOW_RANK,false,{dd:11});
 			}

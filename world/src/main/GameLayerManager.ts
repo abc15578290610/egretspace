@@ -62,19 +62,19 @@ module game {
 			}
 		}
 		private enterGame() {
-			// if (!this.mainLayer.contains(gameView.getInstance())) {
-			// 	MainView.getInstance().visible = false;
-			// 	this.mainLayer.addChild(gameView.getInstance());
-			// 	gameView.getInstance().initGame();
-			// } else {
-			// 	gameView.getInstance().initGame();
-			// }
+			if (!this.mainLayer.contains(gameView.getInstance())) {
+				MainView.getInstance().visible = false;
+				this.mainLayer.addChild(gameView.getInstance());
+				gameView.getInstance().initGame();
+			} else {
+				gameView.getInstance().initGame();
+			}
 		}
 		private quitGame() {
-			// if (this.mainLayer.contains(gameView.getInstance())) {
-			// 	this.mainLayer.removeChild(gameView.getInstance());
-			// 	MainView.getInstance().visible = true;
-			// }
+			if (this.mainLayer.contains(gameView.getInstance())) {
+				this.mainLayer.removeChild(gameView.getInstance());
+				MainView.getInstance().visible = true;
+			}
 		}
 		private enterRank() {
 			let panel = new RankView();
