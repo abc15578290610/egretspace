@@ -1,6 +1,6 @@
   /**
     * 游戏特效汇总
-    * by zhaoxin
+    * by zhong
     * (c) copyright 2014 - 2035
     * All Rights Reserved. 
     * 使用方法如：EffectUtils.rotationEffect()

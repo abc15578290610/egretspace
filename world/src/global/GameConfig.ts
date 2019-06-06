@@ -12,6 +12,8 @@ enum gameData{
         WHEEL,
         /**车身 */
         CAR,
+        BRICK,
+        STONE
 }
 /**
 * 游戏配置文件

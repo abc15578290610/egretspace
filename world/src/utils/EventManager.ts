@@ -1,7 +1,7 @@
 module game {
     /**
      *
-     * @author
+     * @author zhong
      *
      */
     export class CustomEvent {

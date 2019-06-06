@@ -92,6 +92,15 @@ module game {
 		public Yfix(y:number){
 			return Math.floor((egret.MainContext.instance.stage.stageHeight - y) / P2lib.factor);
 		}
+		/**
+		 * p2物理引擎求两个点向量
+		 */
+		public Point(pointA=[0,0],pointB=[0,0]){
+			var Point = [0,0]
+			Point[0] = pointA[0]-pointB[0];
+			Point[1] = pointA[1]-pointB[1];
+			return Point;
+		}
 		/**在指定坐标创建一个刚体*/
 		public addOneBox(x:number,y:number,parent:egret.DisplayObjectContainer): void {
 				var positionX: number = x/P2lib.factor;

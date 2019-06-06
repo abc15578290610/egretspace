@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="gameSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:game="game.*">
-	<game:backwheels width="40" height="40" x="221" y="59" skinName="backWheel"/>
+	<game:brickView x="910" y="569" skinName="brickSkin"/>
+	<game:brickView x="911" y="614" skinName="brickSkin"/>
+	<game:brickView x="911" y="659" skinName="brickSkin"/>
+	<game:brickView x="911" y="704" skinName="brickSkin"/>
+	<game:brickView x="940" y="524" skinName="brickSkin"/>
+	<game:brickView x="1001" y="479" skinName="brickSkin"/>
+	<game:brickView x="1064" y="524" skinName="brickSkin"/>
+	<game:brickView x="1114" y="569" skinName="brickSkin"/>
+	<game:brickView x="1114" y="614" skinName="brickSkin"/>
+	<game:brickView x="1114" y="659" skinName="brickSkin"/>
+	<game:brickView x="1114" y="704" skinName="brickSkin"/>
 </e:Skin>
