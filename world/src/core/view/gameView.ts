@@ -13,38 +13,48 @@ module game {
 		public initGame() {
 			var world = P2lib.gameWorld().initWorld();
 			//创建plane平面
-			var planeBody =  P2lib.gameWorld().createPlaneBody()
+			var planeBody = P2lib.gameWorld().createPlaneBody()
 			planeBody.shapes[0].collisionGroup=gameData.GROUND;
 			planeBody.shapes[0].collisionMask=gameData.CAR|gameData.WHEEL|gameData.BRICK
 			world.addBody(planeBody);
 		}
-		/**
-		 * super.addEvent()
-		 */
 		private beginPos=[0,0]
 		private endPos=[0,0]
+
 		public addEvent() {
-			console.log("添加事件")
 			this.stage.addEventListener(egret.TouchEvent.TOUCH_BEGIN,this.touchHandle,this)
 			this.stage.addEventListener(egret.TouchEvent.TOUCH_END,this.touchHandle,this)
+			this.stage.addEventListener(egret.TouchEvent.TOUCH_MOVE,this.touchHandle,this)
 		}
-		private wheelA:stone
+		private m_stone:stone;
+		private _shape:egret.Shape;
 		private touchHandle(e:egret.TouchEvent){
-			console.log(e.stageY)
-			console.log(e.type)
 			if(e.type==egret.TouchEvent.TOUCH_BEGIN){
-				this.wheelA = new stone();
-				this.wheelA.x=e.stageX
-				this.wheelA.y=e.stageY
+				this._shape = new egret.Shape();
+				if(!this.contains(this._shape))this.addChild(this._shape);
+				this._shape.graphics.beginFill(0xfffff);
+				this._shape.graphics.moveTo(e.stageX,e.stageY);
+				this.m_stone = new stone();
+				this.m_stone.x=e.stageX;
+				this.m_stone.y=e.stageY;
 				this.beginPos[0]=e.stageX;
 				this.beginPos[1]=egret.MainContext.instance.stage.stageHeight-e.stageY;
 			}else if(e.type==egret.TouchEvent.TOUCH_END){
 				this.endPos[0]=e.stageX;
 				this.endPos[1]=egret.MainContext.instance.stage.stageHeight-e.stageY;
 				var pos = P2lib.gameWorld().Point(this.beginPos,this.endPos)
-				this.addChild(this.wheelA);
-				this.wheelA.body.applyForce(pos,[0,0])
-				console.log(pos)
+				this.addChild(this.m_stone);
+				console.log(GameLib.distance(this.beginPos[0],this.beginPos[1],this.endPos[0],this.endPos[1]))
+				this.m_stone.body.applyForce(pos,[0,0])
+				this._shape.graphics.lineStyle(2,0xfffff,1);
+				this._shape.graphics.lineTo(e.stageX,e.stageY);
+				this._shape.graphics.endFill()
+				var tw = egret.Tween.get(this._shape);
+				tw.to({alpha:0},1000).call(()=>{
+					this._shape.graphics.clear();
+				})
+			}else if(e.type==egret.TouchEvent.TOUCH_MOVE){
+
 			}
 		}
 	}

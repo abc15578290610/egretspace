@@ -1,5 +1,4 @@
 class Main extends eui.UILayer {
-
     protected createChildren(): void {
         super.createChildren();
         egret.lifecycle.addLifecycleListener((context) => {
