@@ -45,5 +45,12 @@ module game {
         public static distance(x:number,y:number,to_x:number,to_y:number){
             return egret.Point.distance(new egret.Point(x,y),new egret.Point(to_x,to_y))
         }
+        /**
+         * 求向量角度
+         */
+        public static angle(diff_x,diff_y){
+            //返回角度,不是弧度
+            return 360*Math.atan(diff_y/diff_x)/(2*Math.PI);
+        }
 	}
 }

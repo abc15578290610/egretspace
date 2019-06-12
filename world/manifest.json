@@ -24,6 +24,7 @@
 		"bin-debug/ThemeAdapter.js",
 		"bin-debug/AssetAdapter.js",
 		"bin-debug/core/common/Car.js",
+		"bin-debug/core/view/BoomView.js",
 		"bin-debug/core/view/CarView.js",
 		"bin-debug/core/view/gameView.js",
 		"bin-debug/core/view/mainView.js",

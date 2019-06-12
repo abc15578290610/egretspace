@@ -2,6 +2,7 @@
 	"autoGenerateExmlsList": true,
 	"exmls": [
 		"resource/eui_skins/backWheel.exml",
+		"resource/eui_skins/boomSkin.exml",
 		"resource/eui_skins/boxSkin.exml",
 		"resource/eui_skins/brickSkin.exml",
 		"resource/eui_skins/carSkin.exml",

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="boomSkin" width="300" height="200" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="m_pao" x="113.03" y="132" width="217" height="55" anchorOffsetX="98" anchorOffsetY="47">
+		<e:Rect width="217" height="55" x="0"/>
+		<e:Rect id="m_start" width="20" height="20" x="189.97" y="0"/>
+	</e:Group>
+	<e:Rect id="m_wheel" width="100" height="100" x="72" y="98" anchorOffsetX="0" anchorOffsetY="0" ellipseWidth="100" ellipseHeight="100" fillColor="0x473932"/>
+</e:Skin>

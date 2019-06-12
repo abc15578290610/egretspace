@@ -6,11 +6,18 @@ module game {
 				this._instance = new gameView();
 			return this._instance;
 		}
+		private m_boom:BoomView
 		public constructor() {
 			super();
 			this.skinName="gameSkin"
 		}
 		public initGame() {
+			this.m_boom = new BoomView();
+			this.m_boom.x=100;
+			this.m_boom.y=egret.MainContext.instance.stage.stageHeight-this.m_boom.height;
+			this.addChild(this.m_boom);
+			this.setChildIndex(this.m_boom,0)
+
 			var world = P2lib.gameWorld().initWorld();
 			//创建plane平面
 			var planeBody = P2lib.gameWorld().createPlaneBody()
@@ -35,16 +42,20 @@ module game {
 				this._shape.graphics.beginFill(0xfffff);
 				this._shape.graphics.moveTo(e.stageX,e.stageY);
 				this.m_stone = new stone();
-				this.m_stone.x=e.stageX;
-				this.m_stone.y=e.stageY;
 				this.beginPos[0]=e.stageX;
 				this.beginPos[1]=egret.MainContext.instance.stage.stageHeight-e.stageY;
 			}else if(e.type==egret.TouchEvent.TOUCH_END){
+				
 				this.endPos[0]=e.stageX;
 				this.endPos[1]=egret.MainContext.instance.stage.stageHeight-e.stageY;
-				var pos = P2lib.gameWorld().Point(this.beginPos,this.endPos)
+				var pos = P2lib.gameWorld().Point(this.endPos,this.beginPos)
+				this.m_boom.play(-GameLib.angle(pos[0],pos[1]))
+				this.m_stone.x=this.m_boom.m_start.localToGlobal().x;
+				this.m_stone.y=this.m_boom.m_start.localToGlobal().y+20;
 				this.addChild(this.m_stone);
-				console.log(GameLib.distance(this.beginPos[0],this.beginPos[1],this.endPos[0],this.endPos[1]))
+				var k = GameLib.distance(this.beginPos[0],this.beginPos[1],this.endPos[0],this.endPos[1])/300
+				pos[0]=pos[0]*k;
+				pos[1]=pos[1]*k;
 				this.m_stone.body.applyForce(pos,[0,0])
 				this._shape.graphics.lineStyle(2,0xfffff,1);
 				this._shape.graphics.lineTo(e.stageX,e.stageY);
@@ -54,7 +65,11 @@ module game {
 					this._shape.graphics.clear();
 				})
 			}else if(e.type==egret.TouchEvent.TOUCH_MOVE){
-
+				var endPos=[]
+				endPos[0]=e.stageX;
+				endPos[1]=egret.MainContext.instance.stage.stageHeight-e.stageY;
+				var pos = P2lib.gameWorld().Point(endPos,[0,0]);
+				this.m_boom.angle = -GameLib.angle(pos[0],pos[1])
 			}
 		}
 	}
