@@ -50,7 +50,9 @@ module game {
          */
         public static angle(diff_x,diff_y){
             //返回角度,不是弧度
-            return 360*Math.atan(diff_y/diff_x)/(2*Math.PI);
+            var data = 360*Math.atan(diff_y/diff_x)/(2*Math.PI)
+            if(isNaN(data))return 0;
+            return data;
         }
 	}
 }

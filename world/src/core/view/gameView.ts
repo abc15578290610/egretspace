@@ -17,6 +17,8 @@ module game {
 			this.m_boom.y=egret.MainContext.instance.stage.stageHeight-this.m_boom.height;
 			this.addChild(this.m_boom);
 			this.setChildIndex(this.m_boom,0)
+			this.beginPos[0]=this.m_boom.m_start.localToGlobal().x;
+			this.beginPos[1]=egret.MainContext.instance.stage.stageHeight-this.m_boom.m_start.localToGlobal().y;
 
 			var world = P2lib.gameWorld().initWorld();
 			//创建plane平面
@@ -33,6 +35,13 @@ module game {
 			this.stage.addEventListener(egret.TouchEvent.TOUCH_END,this.touchHandle,this)
 			this.stage.addEventListener(egret.TouchEvent.TOUCH_MOVE,this.touchHandle,this)
 		}
+		private moveSence(bool=true){
+			if(bool){
+				egret.Tween.get(this).to({x:-1334},5000)
+			}else{
+				egret.Tween.get(this).to({x:0},5000)
+			}
+		}
 		private m_stone:stone;
 		private _shape:egret.Shape;
 		private touchHandle(e:egret.TouchEvent){
@@ -40,32 +49,35 @@ module game {
 				this._shape = new egret.Shape();
 				if(!this.contains(this._shape))this.addChild(this._shape);
 				this._shape.graphics.beginFill(0xfffff);
-				this._shape.graphics.moveTo(e.stageX,e.stageY);
+				this._shape.graphics.moveTo(this.beginPos[0],egret.MainContext.instance.stage.stageHeight-this.beginPos[1]);
 				this.m_stone = new stone();
-				this.beginPos[0]=e.stageX;
-				this.beginPos[1]=egret.MainContext.instance.stage.stageHeight-e.stageY;
 			}else if(e.type==egret.TouchEvent.TOUCH_END){
 				
+				this.m_stone.x=this.m_boom.m_start.localToGlobal().x;
+				this.m_stone.y=this.m_boom.m_start.localToGlobal().y+20;
 				this.endPos[0]=e.stageX;
 				this.endPos[1]=egret.MainContext.instance.stage.stageHeight-e.stageY;
 				var pos = P2lib.gameWorld().Point(this.endPos,this.beginPos)
 				this.m_boom.play(-GameLib.angle(pos[0],pos[1]))
-				this.m_stone.x=this.m_boom.m_start.localToGlobal().x;
-				this.m_stone.y=this.m_boom.m_start.localToGlobal().y+20;
 				this.addChild(this.m_stone);
 				var k = GameLib.distance(this.beginPos[0],this.beginPos[1],this.endPos[0],this.endPos[1])/300
+				if(k<1.8)k=1.8;
 				pos[0]=pos[0]*k;
 				pos[1]=pos[1]*k;
 				this.m_stone.body.applyForce(pos,[0,0])
 				this._shape.graphics.lineStyle(2,0xfffff,1);
 				this._shape.graphics.lineTo(e.stageX,e.stageY);
-				this._shape.graphics.endFill()
+				this._shape.graphics.endFill();
+				this.moveSence();
+				setTimeout(()=>{
+					this.moveSence(false)
+				},10000)
 				var tw = egret.Tween.get(this._shape);
 				tw.to({alpha:0},1000).call(()=>{
 					this._shape.graphics.clear();
 				})
 			}else if(e.type==egret.TouchEvent.TOUCH_MOVE){
-				var endPos=[]
+				var endPos=[];
 				endPos[0]=e.stageX;
 				endPos[1]=egret.MainContext.instance.stage.stageHeight-e.stageY;
 				var pos = P2lib.gameWorld().Point(endPos,[0,0]);
