@@ -25,7 +25,7 @@ module game {
 	}
 		/**宽40，高40 */
 	export class stone extends PCircle{
-		public constructor(option?) {
+		public constructor(option={mass:1,position:[]}) {
 			super(option)
 			this.skinName='wheelSkin';
 		}

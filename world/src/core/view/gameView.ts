@@ -1,22 +1,26 @@
 module game {
 	export class gameView extends ElementUI{
+		private m_backS:eui.Image;
+		private m_back:eui.Image;
 		private static _instance: gameView;
 		public static getInstance(): gameView {
 			if (!this._instance)
 				this._instance = new gameView();
 			return this._instance;
 		}
-		private m_boom:BoomView
+		private m_boom:BoomView;
+		private m_door:staticBrickView;
 		public constructor() {
 			super();
 			this.skinName="gameSkin"
 		}
 		public initGame() {
+			console.log(this.m_door)
 			this.m_boom = new BoomView();
 			this.m_boom.x=100;
 			this.m_boom.y=egret.MainContext.instance.stage.stageHeight-this.m_boom.height;
 			this.addChild(this.m_boom);
-			this.setChildIndex(this.m_boom,0)
+			this.setChildIndex(this.m_boom,1)
 			this.beginPos[0]=this.m_boom.m_start.localToGlobal().x;
 			this.beginPos[1]=egret.MainContext.instance.stage.stageHeight-this.m_boom.m_start.localToGlobal().y;
 
@@ -31,20 +35,20 @@ module game {
 		private endPos=[0,0]
 
 		public addEvent() {
-			this.stage.addEventListener(egret.TouchEvent.TOUCH_BEGIN,this.touchHandle,this)
-			this.stage.addEventListener(egret.TouchEvent.TOUCH_END,this.touchHandle,this)
-			this.stage.addEventListener(egret.TouchEvent.TOUCH_MOVE,this.touchHandle,this)
+			this.addEventListener(egret.TouchEvent.TOUCH_BEGIN,this.touchHandle,this)
+			this.addEventListener(egret.TouchEvent.TOUCH_END,this.touchHandle,this)
+			this.addEventListener(egret.TouchEvent.TOUCH_MOVE,this.touchHandle,this)
+			this.m_backS.addEventListener(egret.TouchEvent.TOUCH_TAP,this.moveSence,this)
+			// this.m_back.addEventListener(egret.TouchEvent.TOUCH_TAP,this.moveSence,this)
 		}
-		private moveSence(bool=true){
-			if(bool){
-				egret.Tween.get(this).to({x:-1334},5000)
-			}else{
-				egret.Tween.get(this).to({x:0},5000)
-			}
+		private moveSence(e:egret.Event){
+			e.stopPropagation()
+			egret.Tween.get(this).to({x:0},2500)
 		}
 		private m_stone:stone;
 		private _shape:egret.Shape;
 		private touchHandle(e:egret.TouchEvent){
+			e.stopPropagation()
 			if(e.type==egret.TouchEvent.TOUCH_BEGIN){
 				this._shape = new egret.Shape();
 				if(!this.contains(this._shape))this.addChild(this._shape);
@@ -68,10 +72,7 @@ module game {
 				this._shape.graphics.lineStyle(2,0xfffff,1);
 				this._shape.graphics.lineTo(e.stageX,e.stageY);
 				this._shape.graphics.endFill();
-				this.moveSence();
-				setTimeout(()=>{
-					this.moveSence(false)
-				},10000)
+				egret.Tween.get(this).to({x:-466},2500)
 				var tw = egret.Tween.get(this._shape);
 				tw.to({alpha:0},1000).call(()=>{
 					this._shape.graphics.clear();

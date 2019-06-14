@@ -4,7 +4,7 @@ module game {
 		private _body:p2.Body;
 		private _bodyOption:any;
 		protected _world:p2.World;
-		public constructor(bodyOption={mass:1,position:[]}) {
+		public constructor(bodyOption) {
 			super();
 			this._bodyOption=bodyOption;
 		}
@@ -21,7 +21,7 @@ module game {
 			var boxShape: p2.Shape = new p2.Box({width:this.width/factor, height:this.height/factor});
 			this._shape = boxShape;
 		}
-		private initBody(option={mass:1,position:[]}){
+		private initBody(option){
 			var factor = P2lib.factor;
 			var positionX: number = this.x / factor;
 			var positionY: number = (egret.MainContext.instance.stage.stageHeight - this.y) / factor;

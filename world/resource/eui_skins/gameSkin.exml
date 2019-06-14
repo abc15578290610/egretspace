@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="gameSkin" width="2084" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:game="game.*">
-	<game:brickView x="1548" y="569" skinName="brickSkin"/>
-	<game:brickView x="1549" y="614" skinName="brickSkin"/>
-	<game:brickView x="1549" y="659" skinName="brickSkin"/>
-	<game:brickView x="1549" y="704" skinName="brickSkin"/>
-	<game:brickView x="1578" y="524" skinName="brickSkin"/>
-	<game:brickView x="1639" y="479" skinName="brickSkin"/>
-	<game:brickView x="1702" y="524" skinName="brickSkin"/>
-	<game:brickView x="1752" y="569" skinName="brickSkin"/>
-	<game:brickView x="1752" y="614" skinName="brickSkin"/>
-	<game:brickView x="1752" y="659" skinName="brickSkin"/>
-	<game:brickView x="1752" y="704" skinName="brickSkin"/>
+<e:Skin class="gameSkin" width="1800" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:game="game.*" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="16b54d16fa1"/>
+	<e:Rect width="100%" height="100%" fillColor="0xadeaf7" fillAlpha="0.7"/>
+	<game:brickView x="1241" y="569" skinName="brickSkin"/>
+	<game:brickView x="1242" y="614" skinName="brickSkin"/>
+	<game:brickView x="1242" y="659" skinName="brickSkin"/>
+	<game:brickView x="1242" y="704" skinName="brickSkin"/>
+	<game:brickView x="1271" y="524" skinName="brickSkin"/>
+	<game:brickView x="1332" y="479" skinName="brickSkin"/>
+	<game:brickView x="1395" y="524" skinName="brickSkin"/>
+	<game:brickView x="1445" y="569" skinName="brickSkin"/>
+	<game:brickView x="1445" y="614" skinName="brickSkin"/>
+	<game:brickView x="1445" y="659" skinName="brickSkin"/>
+	<game:brickView x="1445" y="704" skinName="brickSkin"/>
+	<game:staticBrickView id="m_door" width="120" height="352" x="684" y="571" anchorOffsetX="60" anchorOffsetY="176" skinName="brickSkin"/>
+	<e:Image id="m_back" x="28" y="26" source="back_png" anchorOffsetX="0" anchorOffsetY="0" width="50" height="50"/>
+	<e:Image id="m_backS" y="26" source="back_png" anchorOffsetX="0" anchorOffsetY="0" width="50" height="50" right="34"/>
 </e:Skin>
