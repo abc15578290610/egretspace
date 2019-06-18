@@ -1,0 +1,95 @@
+{
+	"groups": [
+		{
+			"keys": "description_json,close_png,back_1_png,1_png,2_png,3_png,4_png,5_png,logo_png,12_png,22_png,adLogin_png,beijing_jpg,fastLogin_png,kefu_png,loading1_png,loading2_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "assets/btn/close.png",
+			"type": "image",
+			"name": "close_png"
+		},
+		{
+			"url": "assets/btn/back_1.png",
+			"type": "image",
+			"name": "back_1_png"
+		},
+		{
+			"name": "1_png",
+			"type": "image",
+			"url": "assets/btn/1.png"
+		},
+		{
+			"name": "2_png",
+			"type": "image",
+			"url": "assets/btn/2.png"
+		},
+		{
+			"name": "3_png",
+			"type": "image",
+			"url": "assets/btn/3.png"
+		},
+		{
+			"name": "4_png",
+			"type": "image",
+			"url": "assets/btn/4.png"
+		},
+		{
+			"name": "5_png",
+			"type": "image",
+			"url": "assets/btn/5.png"
+		},
+		{
+			"name": "logo_png",
+			"type": "image",
+			"url": "assets/mui/logo.png"
+		},
+		{
+			"name": "12_png",
+			"type": "image",
+			"url": "assets/mui/标注示意/1.png"
+		},
+		{
+			"name": "22_png",
+			"type": "image",
+			"url": "assets/mui/标注示意/2.png"
+		},
+		{
+			"name": "adLogin_png",
+			"type": "image",
+			"url": "assets/mui/adLogin.png"
+		},
+		{
+			"name": "beijing_jpg",
+			"type": "image",
+			"url": "assets/mui/beijing.jpg"
+		},
+		{
+			"name": "fastLogin_png",
+			"type": "image",
+			"url": "assets/mui/fastLogin.png"
+		},
+		{
+			"name": "kefu_png",
+			"type": "image",
+			"url": "assets/mui/kefu.png"
+		},
+		{
+			"name": "loading1_png",
+			"type": "image",
+			"url": "assets/mui/loading1.png"
+		},
+		{
+			"name": "loading2_png",
+			"type": "image",
+			"url": "assets/mui/loading2.png"
+		}
+	]
+}
