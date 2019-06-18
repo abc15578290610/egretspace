@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "description_json,close_png,back_1_png,1_png,2_png,3_png,4_png,5_png,logo_png,12_png,22_png,adLogin_png,beijing_jpg,fastLogin_png,kefu_png,loading1_png,loading2_png,示意标注_png,13_png,23_png,32_png,42_png,52_png,6_png,help_png,zha_png,打牌2_png,打牌1_png,cm1_png,cm2_png,cm3_png,cm4_png,cm5_png,cm6_png,cm7_png,cm8_png,WIN_png,倒计时_png,切换房间_png,发 送_png,广播_png,广播底_png,庄平倍_png,庄翻倍_png,无牛_png,筹码底_png,筹码选中光_png,箭头1_png,箭头2_png,结算中_png,聊天_png,聊天底_png,蓝_png,表情_png,规则_png,视频_png,设置_png,路子图_png,路子图2_png,返回底_png,金币_png,金币底_png,问号_png,闲1平倍_png,闲1翻倍_png,闲2平倍_png,闲2翻倍_png,闲3平倍_png,闲3翻倍_png,黄_png,圆角矩形 666 拷贝 4_png,登 录_png,登录_png,获取验证码_png,标注_png,设置标注_png,音乐_png,X_png,底_png,点_png,聊天 copy_png,设置标注2_png,声音_png,视频2_png,系统设置_png,现场_png,小弹窗通用底_png,选房间标注_png,限红_png,jinbi_png,底2_png,金币底2_png,开始_png,头像底_png,图层 602_png,选择房间3_png,选择房间1_png,选择房间2_png,和_png,大_png,大1_png,小1_png,小2_png,小圈_png,小圈2_png,小红_png,小蓝_png,庄_png,斜杠_png,闲_png,龙虎百家乐底_png,14_png,24_png,33_png,43_png,53_png,62_png,大小点底_png,WIN2_png,庄2_png,底3_png,没牛底_png,牛N底_png,牛牛底_png,闲1_png,闲2_png,闲3_png,WIN1_png,凤_png,凤2_png,椭圆 1310 拷贝 2_png,椭圆 1310_png,炸金花_png,龙_png,龙2_png,按钮_png,结算中底_png,金币2_png,金币底3_png,时间图标_png,头像适配_png,下注中底_png,选择房间_png,大厅标注_png,0_png,15_png,25_png,34_png,44_png,54_png,63_png,7_png,8_png,9_png,d_png,+_png,beijing2_jpg,gb_png,VIP  _png,百家乐_png,绑定_png,北京赛车_png,大小点_png,单双_png,公告_png,广告_png,广告点_png,广告点选中_png,滚动条底_png,红点_png,滑动_png,活动_png,金币3_png,金币底4_png,客服_png,龙虎_png,牛牛_png,商城_png,上底_png,时时彩_png,送金币_png,提现_png,头像框_png,头像适配大小_png,图层-21_png,推广_png,推筒子_png,下底_png,幸运飞艇_png,邮件_png,余额宝_png,真人视讯_png",
+			"keys": "description_json,close_png,back_1_png,1_png,2_png,3_png,4_png,5_png,logo_png,12_png,22_png,adLogin_png,beijing_jpg,fastLogin_png,kefu_png,loading1_png,loading2_png,示意标注_png,13_png,23_png,32_png,42_png,52_png,6_png,help_png,zha_png,打牌2_png,打牌1_png,cm1_png,cm2_png,cm3_png,cm4_png,cm5_png,cm6_png,cm7_png,cm8_png,WIN_png,倒计时_png,切换房间_png,发 送_png,广播_png,广播底_png,庄平倍_png,庄翻倍_png,无牛_png,筹码底_png,筹码选中光_png,箭头1_png,箭头2_png,结算中_png,聊天_png,聊天底_png,蓝_png,表情_png,规则_png,视频_png,设置_png,路子图_png,路子图2_png,返回底_png,金币_png,金币底_png,问号_png,闲1平倍_png,闲1翻倍_png,闲2平倍_png,闲2翻倍_png,闲3平倍_png,闲3翻倍_png,黄_png,标注_png,设置标注_png,音乐_png,X_png,底_png,点_png,聊天 copy_png,设置标注2_png,声音_png,视频2_png,系统设置_png,现场_png,小弹窗通用底_png,选房间标注_png,限红_png,jinbi_png,底2_png,金币底2_png,开始_png,头像底_png,图层 602_png,选择房间3_png,选择房间1_png,选择房间2_png,和_png,大_png,大1_png,小1_png,小2_png,小圈_png,小圈2_png,小红_png,小蓝_png,庄_png,斜杠_png,闲_png,龙虎百家乐底_png,14_png,24_png,33_png,43_png,53_png,62_png,大小点底_png,WIN2_png,庄2_png,底3_png,没牛底_png,牛N底_png,牛牛底_png,闲1_png,闲2_png,闲3_png,WIN1_png,凤_png,凤2_png,椭圆 1310 拷贝 2_png,椭圆 1310_png,炸金花_png,龙_png,龙2_png,按钮_png,结算中底_png,金币2_png,金币底3_png,时间图标_png,头像适配_png,下注中底_png,选择房间_png,大厅标注_png,0_png,15_png,25_png,34_png,44_png,54_png,63_png,7_png,8_png,9_png,d_png,+_png,beijing2_jpg,gb_png,VIP  _png,百家乐_png,绑定_png,北京赛车_png,大小点_png,单双_png,公告_png,广告_png,广告点_png,广告点选中_png,滚动条底_png,红点_png,滑动_png,活动_png,金币3_png,金币底4_png,客服_png,龙虎_png,牛牛_png,商城_png,上底_png,时时彩_png,送金币_png,提现_png,头像框_png,头像适配大小_png,图层-21_png,推广_png,推筒子_png,下底_png,幸运飞艇_png,邮件_png,余额宝_png,真人视讯_png,login_btn_png,login_text_png,get_code_png,input_bg_png",
 			"name": "preload"
 		}
 	],
@@ -355,26 +355,6 @@
 			"name": "黄_png",
 			"type": "image",
 			"url": "assets/mui/game/黄.png"
-		},
-		{
-			"name": "圆角矩形 666 拷贝 4_png",
-			"type": "image",
-			"url": "assets/mui/login/圆角矩形 666 拷贝 4.png"
-		},
-		{
-			"name": "登 录_png",
-			"type": "image",
-			"url": "assets/mui/login/登 录.png"
-		},
-		{
-			"name": "登录_png",
-			"type": "image",
-			"url": "assets/mui/login/登录.png"
-		},
-		{
-			"name": "获取验证码_png",
-			"type": "image",
-			"url": "assets/mui/login/获取验证码.png"
 		},
 		{
 			"name": "标注_png",
@@ -965,6 +945,26 @@
 			"name": "真人视讯_png",
 			"type": "image",
 			"url": "assets/mui/hall/真人视讯.png"
+		},
+		{
+			"name": "login_btn_png",
+			"type": "image",
+			"url": "assets/mui/login/login_btn.png"
+		},
+		{
+			"name": "login_text_png",
+			"type": "image",
+			"url": "assets/mui/login/login_text.png"
+		},
+		{
+			"name": "get_code_png",
+			"type": "image",
+			"url": "assets/mui/login/get_code.png"
+		},
+		{
+			"name": "input_bg_png",
+			"type": "image",
+			"url": "assets/mui/login/input_bg.png"
 		}
 	]
 }
