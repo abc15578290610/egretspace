@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="mainViewSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Rect width="100%" height="100%" fillColor="0x595959"/>
+<e:Skin class="mainViewSkin" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
 
 
-	<e:Button id="m_start" label="开始挑战" y="208" skinName="MButton" horizontalCenter="0" height="85"/>
-	<e:Button id="m_rule" label="游戏规则" y="324" skinName="MButton" horizontalCenter="0" height="85"/>
-	<e:Button id="m_rank" label="排行榜" y="440" skinName="MButton" horizontalCenter="0" height="85"/>
+
+
+
+
 
 </e:Skin>

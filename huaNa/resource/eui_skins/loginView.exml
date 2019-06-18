@@ -1,3 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="loginView" width="1280" height="720" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="bg_2_png" x="277" y="119"/>
+	<e:Image source="login_btn_png" y="598" horizontalCenter="0"/>
+	<e:Image source="login_text_png" y="142" x="598"/>
+	<e:Image source="get_code_png" y="501" horizontalCenter="0.5"/>
+	<e:Group x="440" y="274" width="466">
+		<e:Image source="input_bg_png" x="112" y="0"/>
+		<e:Label text="手机号：" x="0" textColor="0xdec794" verticalCenter="0"/>
+	</e:Group>
+	<e:Group x="440" y="358">
+		<e:Image source="input_bg_png" x="113" y="0"/>
+		<e:Label text="验证码：" x="0" textColor="0xdec794" verticalCenter="0"/>
+	</e:Group>
 </e:Skin>
