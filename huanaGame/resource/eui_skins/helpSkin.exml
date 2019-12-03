@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="helpSkin" width="1280" height="720" xmlns:e="http://ns.egret.com/eui">
+    <e:Image source="bg_2_png" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image y="159" source="help_png" horizontalCenter="0"/>
+</e:Skin>

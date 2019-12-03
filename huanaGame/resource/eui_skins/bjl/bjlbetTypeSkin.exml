@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="bjlbetTypeSkin" width="1502" height="217" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="bet_area_png" x="7" y="7"/>
+	<e:Image id="m_1" source="bjl_xd_png" x="10" name="1" y="14.24" alpha="0"/>
+	<e:Image id="m_2" source="bjl_xian_png" x="272.33" y="9.09" name="2" anchorOffsetX="0" width="327.94" alpha="0"/>
+	<e:Image id="m_3" source="bjl_ping_png" y="15.15" x="640.88" name="3" alpha="0"/>
+	<e:Image id="m_4" source="bjl_zuan_png" x="910.4" y="15.15" name="4" anchorOffsetX="0" width="306.72" alpha="0"/>
+	<e:Image id="m_5" source="bjl_zd_png" y="0" name="5" x="1226" alpha="0"/>
+	<e:Label text="1:0.95" size="26" textColor="0x988963" x="532" y="106" visible="false"/>
+	<e:Label id="all_2" text="1:0.95" size="20" textColor="0x988963" x="730.85" y="183"/>
+	<e:Label text="1:0.95" size="26" textColor="0x988963" x="748" y="106" visible="false"/>
+	<e:Label id="all_3" text="1:0.95" size="20" textColor="0x988963" x="1037.76" y="183"/>
+	<e:Label text="1:0.95" size="26" textColor="0x988963" x="968" y="106" visible="false"/>
+	<e:Label id="all_4" text="1:0.95" size="20" textColor="0x988963" x="1330.48" y="183"/>
+	<e:Label text="1:0.95" size="26" textColor="0x988963" x="108" y="106" visible="false"/>
+	<e:Label id="all_0" text="1:0.95" size="20" textColor="0x988963" x="122" y="183"/>
+	<e:Label text="1:0.95" size="26" textColor="0x988963" x="320" y="106" visible="false"/>
+	<e:Label id="all_1" text="1:0.95" size="20" textColor="0x988963" x="405.82" y="183"/>
+</e:Skin>

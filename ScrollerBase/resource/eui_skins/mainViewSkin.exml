@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="mainViewSkin" width="1280" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:game="game.*" xmlns:w="http://ns.egret.com/wing">
+	<game:ScrollerBase width="469" height="185" x="264" y="125" skinName="ScrollerBaseSkin" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Group anchorOffsetX="0" width="469" height="185">
+			<e:Image id="m_bg" source="nn_game_cell_png" fillMode="repeat" width="0" height="185"/>
+			<e:List id="m_list" height="185" anchorOffsetY="0" itemRendererSkinName="itemSkin">
+				<e:layout>
+					<e:HorizontalLayout/>
+				</e:layout>
+			</e:List>
+		</e:Group>
+	</game:ScrollerBase>
+</e:Skin>

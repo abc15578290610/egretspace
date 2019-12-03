@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="bjlresultViewSkin" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:game="game.*" xmlns:w="http://ns.egret.com/wing">
+
+
+
+
+
+
+
+
+	<e:Group id="m_box" y="269" horizontalCenter="0">
+		<e:Image id="m_win" source="bjl_win_bg_png" width="50%" height="100%" visible="false"/>
+		<e:Image source="result_1_png" x="0" y="0"/>
+		<e:Image source="result_2_png" x="122" y="0"/>
+		<e:Image source="poke_bg_png" x="34.38" y="46.85" id="k_0" width="163" height="231" anchorOffsetX="81" scaleX="0.32" scaleY="0.32"/>
+		<e:Image id="k_1" source="poke_bg_png" x="93.68" y="46" scaleX="0.32" scaleY="0.32" width="163" height="231" anchorOffsetX="81"/>
+		<e:Image source="poke_bg_png" x="28.6" y="149.92" scaleX="0.32" scaleY="0.32" id="k_2" width="163" height="231" anchorOffsetX="81" rotation="-90"/>
+		<e:Image id="k_3" source="poke_bg_png" x="152.38" y="46.85" width="163" height="231" anchorOffsetX="81" scaleX="0.32" scaleY="0.32"/>
+		<e:Image id="k_4" source="poke_bg_png" x="211.68" y="46" scaleX="0.32" scaleY="0.32" width="163" height="231" anchorOffsetX="81"/>
+		<e:Image id="k_5" source="poke_bg_png" x="146.6" y="149.92" scaleX="0.32" scaleY="0.32" width="163" height="231" anchorOffsetX="81" rotation="-90"/>
+		<e:Label id="l_0" text="" x="58" y="8" width="59" height="31" textAlign="center"/>
+		<e:Label text="" x="133" y="8" id="l_1" width="59" height="31" textAlign="center"/>
+	</e:Group>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</e:Skin>

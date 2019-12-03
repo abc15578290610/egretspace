@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="goldSkin" width="150" height="39" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+
+
+
+	<e:BitmapLabel id="m_num" x="30" font="num_font_1_fnt" text="1000" anchorOffsetX="0" width="116" height="24" verticalCenter="0.5" letterSpacing="2"/>
+	<e:Image source="gold_bg_png"/>
+</e:Skin>

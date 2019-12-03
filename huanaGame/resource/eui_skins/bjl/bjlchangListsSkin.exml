@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="bjlchangListsSkin" width="157" height="158" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="change_ludan_png"/>
+	<e:Scroller width="152" height="112" y="40" scrollPolicyV="off" x="1">
+        <e:List id="m_list" width="152" height="110" y="1" anchorOffsetY="0" itemRendererSkinName="bjlchangListItem">
+                <e:ArrayCollection>
+                    <e:Array>
+                        <e:Object name="ewe"/>
+                        <e:Object name="null"/>
+                        <e:Object name="null"/>
+                        <e:Object name="null"/>
+                        <e:Object name="null"/>
+                        <e:Object name="null"/>
+                        <e:Object name="null"/>
+                        <e:Object name="null"/>
+                        <e:Object name="null"/>
+                        <e:Object name="null"/>
+                        <e:Object name="null"/>
+                        <e:Object name="null"/>
+                    </e:Array>
+                </e:ArrayCollection>
+                <e:layout>
+                    <e:HorizontalLayout gap="0"/>
+                </e:layout>
+        </e:List>
+	</e:Scroller>
+</e:Skin>

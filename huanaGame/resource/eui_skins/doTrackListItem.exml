@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="doTrackListItem" width="1216" height="50" xmlns:e="http://ns.egret.com/eui">
+    	<e:Group  height="50">
+        <e:Label text="{data.name}" x="0" y="0" width="120" height="30" textAlign="center" size="21"/>
+		<e:Label text="{data.type}" x="20" y="20" width="120" height="30" textAlign="center"  size="21"/>
+		<e:Label text="{data.tradeMoney}" x="30" y="30" width="150" height="30" textAlign="center"  size="21"/>
+		<e:Label text="{data.totalMoney}" x="40" y="40" width="150" height="30" textAlign="center"  size="21"/>
+		<e:Label text="{data.stime}" x="60" y="60" width="250" textAlign="center"  size="21"/>
+		<e:layout>
+			<e:HorizontalLayout gap="59" verticalAlign="middle" horizontalAlign="center"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

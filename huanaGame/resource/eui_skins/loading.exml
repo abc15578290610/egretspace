@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="loading" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:game="game.*">
+	<e:Image source="beijing_jpg" width="100%" height="100%"/>
+	<e:Image source="logo_png" horizontalCenter="0" verticalCenter="-65"/>
+	<e:Image source="kefu_png" right="23" top="22"/>
+	<e:Group id="g_loading" horizontalCenter="0" bottom="90">
+		<e:Image source="loading2_png" y="0" x="0"/>
+		<e:Image id="m_loading" source="loading1_png" x="0" y="0" scale9Grid="12,5,831,7" width="0"/>
+		<e:Label text="加载中，请稍后..." y="40" textColor="0xffd978" size="22" x="344" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Group id="g_login" horizontalCenter="0" y="478" visible="false">
+		<e:Image id="m_fast" source="fastLogin_png" x="0" y="0"/>
+		<e:Image id="m_acount" source="adLogin_png" x="320" y="0"/>
+	</e:Group>
+</e:Skin>

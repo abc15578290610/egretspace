@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="chatCellSkin" width="420" height="250" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="chat_btn_png" left="0" bottom="0"/>
+	<e:Image source="chat_bg_png" x="60" y="204"/>
+	<e:Image source="emoji_png" x="283" y="209"/>
+	<e:Image source="send_btn_png" x="324" y="205"/>
+	<e:TextInput width="215" height="33" x="64" y="210" anchorOffsetX="0" anchorOffsetY="0" prompt="点击输入" textColor="0x333331"/>
+	<e:Label text="(玩家)" x="19" y="153" textColor="0x65a1d7" size="18"/>
+    <e:Label text="你说这把开什么。" x="79.5" y="153" textColor="0xffffff" size="18" width="161"/>
+</e:Skin>

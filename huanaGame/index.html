@@ -1,0 +1,365 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>华纳</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="full-screen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+	<link href="http://vjs.zencdn.net/5.5.3/video-js.css" rel="stylesheet">  
+  	<script src="http://vjs.zencdn.net/ie8/1.1.1/videojs-ie8.min.js"></script>
+    <style>
+	    html, body {
+            background: #064435;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 13.34rem;
+        }
+		#preloading {
+			width: 100%;
+			height: 100%;
+			z-index: 10;
+			margin: auto;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			text-align: center;
+    		width:100%;
+    		height:100%;
+    		background-size:100% 100%;
+    		position:absolute;
+			overflow:hidden;
+  			overflow-y:visible;
+  			overflow-x:visible
+		}
+		.spinner9 {
+			margin: auto;
+			width: 200px;
+			height: 60px;
+			position: absolute; 
+			top: 0; left: 0; bottom: 0; right: 0; 
+			font-size: 10px;
+		}
+
+		.spinner9 > div {
+			background-color: #2676a3;
+			height: 50%;
+			width: 6px;
+			display:inline-block;
+			
+			-webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+			animation: stretchdelay 1.2s infinite ease-in-out;
+		}
+
+		.spinner9 .rect2 {
+			-webkit-animation-delay: -1.1s;
+			animation-delay: -1.1s;
+		}
+
+		.spinner9 .rect3 {
+			-webkit-animation-delay: -1.0s;
+			animation-delay: -1.0s;
+		}
+
+		.spinner9 .rect4 {
+			-webkit-animation-delay: -0.9s;
+			animation-delay: -0.9s;
+		}
+
+		.spinner9 .rect5 {
+			-webkit-animation-delay: -0.8s;
+			animation-delay: -0.8s;
+		}
+		
+		.spinner9 .tip {
+			color: #2676a3;
+			text-align: center;
+			font-family:"SimHei";
+			font-weight:bold
+		}
+
+		@-webkit-keyframes stretchdelay {
+			0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+			20% { -webkit-transform: scaleY(1.0) }
+		}
+
+		@keyframes stretchdelay {
+			0%, 40%, 100% { 
+				transform: scaleY(0.4);
+				-webkit-transform: scaleY(0.4);
+			}  
+			20% { 
+				transform: scaleY(1.0);
+				-webkit-transform: scaleY(1.0);
+			}
+		}
+		
+		div {
+		 	font-family: "楷体";
+		 }
+		.mainContainer {
+			display: none;
+			width: 100%;
+			position: absolute;
+			height: 100%;
+			top: 0px;
+			left: 0px;
+			z-index: 0;
+			/*justify-content: center;
+			align-items: center;*/
+			overflow: hidden;
+		}
+		.left-vedio{
+			display: none;
+			position: absolute;
+			z-index: 0;
+			top: 1px;
+			left: 100px;
+			justify-content: flex-start;
+		}
+		.video-js {
+			display: block;
+			position: absolute;
+		}
+		object{
+			object-fit:fill;
+		}
+		#my-video1{
+			border: 2px solid;
+		}
+    </style>
+	 <script src="js/video.js"></script>
+ 	 <!--<script src="http://vjs.zencdn.net/5.5.3/video.js"></script>-->
+	<!--<script src="https://cdn.bootcss.com/vConsole/3.3.4/vconsole.min.js"></script>
+	<script>
+		var vConsole = new VConsole();
+	</script>-->
+</head>
+<body>
+    <div id="preloading">
+		<div class="spinner9">
+			<div class="rect1">&nbsp;</div>
+			<div class="rect2">&nbsp;</div>
+			<div class="rect3">&nbsp;</div>
+			<div class="rect4">&nbsp;</div>
+			<div class="rect5">&nbsp;</div>
+			<p class="tip">正在加载基础	文件，请稍候...</p>
+		</div>
+	</div>
+	<div class="mainContainer">
+		 <video name="videoElement" id="my-video" class="video-js" muted controls preload="auto" width="100%" height="100%"  
+		poster="" data-setup="{}" autoplay>  
+			<source src="rtmp://hnpull.hn083.com/live/z002" type="rtmp/mp4">  -->
+				<!-- rtmp://hnpull.hn083.com/live/z002 -->
+				<!-- rtmp://58.200.131.2:1935/livetv/hunantv -->
+				<p class="vjs-no-js">播放视频需要启用 JavaScript，推荐使用支持HTML5的浏览器访问。  
+				To view this video please enable JavaScript, and consider upgrading to a web browser that  
+			<a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>  
+			</p>  
+		</video>  
+    </div>
+	<div class="left-vedio">
+		 <video name="videoElement1" id="my-video1" class="video-js" muted controls preload="auto" width="180px" height="110px"  
+		poster="" data-setup="{}" autoplay>  
+			<source src="rtmp://hnpull.hn083.com/live/z002" type="rtmp/mp4">  -->
+				<!-- rtmp://hnpull.hn083.com/live/z002 -->
+				<!-- rtmp://58.200.131.2:1935/livetv/hunantv -->
+				<p class="vjs-no-js">播放视频需要启用 JavaScript，推荐使用支持HTML5的浏览器访问。  
+				To view this video please enable JavaScript, and consider upgrading to a web browser that  
+			<a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>  
+			</p>  
+		</video>  
+    </div>
+	<!--//showAll fixedNarrow fixedwidth-->
+    <div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
+         data-entry-class="Main"
+         data-orientation="landscape"
+         data-scale-mode="fixedWidth"
+         data-frame-rate="30"
+         data-content-width="1920"
+         data-content-height="1080"
+         data-multi-fingered="2"
+         data-show-fps="true" data-show-log="false"
+         data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
+    </div>
+<script>
+////////////////////////////////////////视频关键代码
+
+		// var player = document.getElementsByClassName("video-js")[0];
+
+		var player = videojs('my-video',{
+				muted: true,
+				controls : true/false,
+				fluid:true     
+			});
+		var player1 = videojs('my-video1',{
+				muted: true,
+				height:180, 
+				width:250
+			});
+		// document.getElementsByClassName('egret-player')[0].style.display="none";
+		// document.getElementsByClassName('mainContainer')[0].style.display="flex";
+		// document.getElementsByClassName('mainContainer')[0].style.zIndex=10;
+		// document.getElementsByClassName('left-vedio')[0].style.display="flex";
+		// document.getElementsByClassName('left-vedio')[0].style.zIndex=10;
+
+        function flv_start() {
+			document.getElementsByClassName("mainContainer")[0].style.display="flex";
+			document.getElementsByClassName("left-vedio")[0].style.display="flex";
+			document.getElementsByClassName("left-vedio")[0].style.left = pxToEgret(175)+"px";	
+			console.log(player)
+			try {
+				if(player&&player1){
+					player.play();
+					player1.play();
+				}
+			} catch (error) {
+				console.warn("播放器不支持")
+			}
+
+        }
+
+        function flv_pause() {
+			// flv_destroy()
+        }
+
+        function flv_destroy() {
+			document.getElementsByClassName("mainContainer")[0].style.display="none";
+			document.getElementsByClassName("left-vedio")[0].style.display="none";
+        }
+		function systemType(){
+			var ua = window.navigator.userAgent.toLowerCase();
+			var microStr = "" + ua.match(/MicroMessenger/i);
+			if(("" + ua.match(/windows nt/i)) == "windows nt") {
+				return "windows";
+			} else if(("" + ua.match(/iphone/i)) == "iphone") {
+				return "ios";
+			} else if(("" + ua.match(/android/i)) == "android") {
+				return "android";
+			} else if(("" + ua.match(/ipad/i)) == "ipad") {
+				return "ipad";
+			} else if(("" + ua.match(/linux/i)) == "linux") {
+				return "linux";
+			} else if(("" + ua.match(/mac/i)) == "mac") {
+				return "mac";
+			} else if(("" + ua.match(/ucbrower/i)) == "ucbrower") {
+				return "ucbrower";
+			} else {
+				console.log("未知系统类型");
+			}
+		}
+		// var evt = "onorientationchange" in window ? "orientationchange" : "resize";
+		// window.addEventListener(evt, function() {
+		// 	document.getElementsByClassName("video-js")[0].style.display="none";
+		// 	setTimeout(function(){
+		// 		horizontalScreen();
+		// 	},300)
+		// })
+		/*强制横屏*/
+		function horizontalScreen(){
+				let myVideo = document.getElementsByClassName('video-js')[0];
+				document.getElementsByClassName("video-js")[0].style.display="block";
+		}
+		function playWithUrl(src,src1){
+			try{
+				if(player&&player1){
+					player.src(src);
+					player1.src(src1);
+					player.load(src);
+					player1.load(src1);
+					player.play();
+					player1.play();
+				}
+			}catch(e){
+				console.warn("播放地址有误")
+			}
+			console.log(player1)
+			console.log(player)
+		}
+		function pxToEgret(_pox,bool){
+			if(bool){
+				var num = document.documentElement.clientHeight*_pox/1080;
+				return num
+			}else{
+				var num = document.documentElement.clientWidth*_pox/1920;
+				return num
+			}
+		}
+		function HEgretTopx(_x,bool){
+			if(bool){//竖屏
+				var num = document.documentElement.clientHeight*_x/1920;
+				return num
+			}else{//横屏
+				var num = document.documentElement.clientWidth*_x/1080;
+				return num
+			}
+		}
+		function WEgretTopx(_x,bool){
+			if(bool){//竖屏
+				var num = document.documentElement.clientWidth*_x/1920;
+				return num
+			}else{//横屏
+				var num = document.documentElement.clientHeight*_x/1080;
+				return num
+			}
+		}
+		function playvideo(){
+		}
+////////////////////////////////////////egret关键代码
+    var loadScript = function (list, callback) {
+        var loaded = 0;
+        var loadNext = function () {
+            loadSingleScript(list[loaded], function () {
+                loaded++;
+                if (loaded >= list.length) {
+                    callback();
+                }
+                else {
+                    loadNext();
+                }
+            })
+        };
+        loadNext();
+    };
+
+    var loadSingleScript = function (src, callback) {
+        var s = document.createElement('script');
+        s.async = false;
+        s.src = src;
+        s.addEventListener('load', function () {
+            s.parentNode.removeChild(s);
+            s.removeEventListener('load', arguments.callee, false);
+            callback();
+        }, false);
+        document.body.appendChild(s);
+    };
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', './manifest.json?v=' + Math.random(), true);
+    xhr.addEventListener("load", function () {
+        var manifest = JSON.parse(xhr.response);
+		var list = manifest.initial.concat(manifest.game);
+        loadScript(list, function () {
+            egret.runEgret({ renderMode: "webgl", audioType: 0, calculateCanvasScaleFactor:function(context) {
+                var backingStore = context.backingStorePixelRatio ||
+                    context.webkitBackingStorePixelRatio ||
+                    context.mozBackingStorePixelRatio ||
+                    context.msBackingStorePixelRatio ||
+                    context.oBackingStorePixelRatio ||
+                    context.backingStorePixelRatio || 1;
+                return (window.devicePixelRatio || 1) / backingStore;
+            }});
+        });
+    });
+    xhr.send(null);
+</script>
+</body>
+
+</html>

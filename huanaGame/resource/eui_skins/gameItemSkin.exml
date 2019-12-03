@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="gameItemSkin" width="1099" height="162" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:game="game.*">
+	<e:Group x="0" y="0" touchThrough="false" touchEnabled="false" touchChildren="false">
+		<e:Image source="game_item_png" x="0" y="0"/>
+		<e:Label id="m_roomId" text="牛牛NO1" x="129" y="25" textColor="0xebda92" anchorOffsetX="0" width="182" textAlign="center" size="24" fontFamily="Arial"/>
+		<e:Label id="m_xh" text="限红10-1000" x="129" y="78" textColor="0xEBDA92" anchorOffsetX="0" width="182" textAlign="center" size="24" fontFamily="Arial"/>
+		<e:Image source="xh_png" y="4" x="895"/>
+		<e:Image source="tick1_png" x="148" y="116"/>
+		<e:Label id="m_time" text="20" x="192" y="124" size="22" textColor="0xebda92" width="119"/>
+		<e:Group id="m_cells" width="391" height="162" x="382" anchorOffsetX="0">
+			<e:layout>
+				<e:HorizontalLayout gap="0"/>
+			</e:layout>
+		</e:Group>
+		<e:Label id="m_name" text="" x="10" y="123" anchorOffsetX="0" width="110" textAlign="center" size="25" height="25"/>
+		<e:Label id="m_state" text="" y="20" textColor="0xffffff" width="140" textAlign="center" right="40"/>
+		<e:Label id="r_0" text="统计" x="794" y="12.46" textColor="0xe0bd62" size="22"/>
+		<e:Label id="r_1" text="闲1" x="794" y="50.04" textColor="0x2fa3b1" size="22"/>
+		<e:Label id="r_2" text="闲2" x="794" y="90.52" textColor="0x2fa3b1" size="22"/>
+		<e:Label id="r_3" text="闲3" x="794" y="132.66" textColor="0x2fa3b1" size="22"/>
+	</e:Group>
+	<e:Image source="go_btn_png" x="896" y="70"/>
+</e:Skin>

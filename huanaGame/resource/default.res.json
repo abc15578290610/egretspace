@@ -1,0 +1,1174 @@
+{
+	"groups": [
+		{
+			"keys": "description_json,num_font_1_fnt,num_font_1_png,adLogin_png,beijing_jpg,bg_2_png,bjl_da_png,bjl_ping_png,bjl_xd_png,bjl_xian_png,bjl_xiao_png,bjl_zd_png,bjl_zuan_png,ludan_h_png,ludan_point_b_png,ludan_point_r_png,ludan_x_png,ludan_xwl_png,ludan_z_png,ludan_zwl_png,change_ludan_item_png,bet_day_arrow_png,bet_record_1_png,bet_record_2_png,bet_record_bg_png,bottom_bg_png,m_close_png,title2_bg_png,title_bg_png,track_record_1_png,track_record_2_png,xiala_bg_png,xiala_btn_bg_png,fastLogin_png,!_png,bet_area_png,bet_cf_png,bet_qx_png,bet_sure_png,bet_switch_png,bjl_quit_png,bjl_win_bg_png,blue_1_png,call1_bg_png,call_all_png,change_arrow_png,change_bg_png,change_btn_png,change_ludan_png,chat_bg_png,chat_btn_png,chou_bg_png,chou_light_png,cm1_png,cm2_png,cm3_png,cm4_png,cm5_png,cm6_png,cm7_png,cm8_png,emoji_png,f_x1_png,f_x2_png,f_x3_png,g1_png,g2_png,g3_png,g4_png,g5_png,g6_png,help_btn_png,ludan_png,ludan_part_png,luzi_tu_png,m_arrow_png,nn_back_png,no_nn_png,result_1_png,result_2_png,result_btn_png,rule_png,sence_switch_png,send_btn_png,set_btn_png,switch_room_png,time_count_png,video_png,WIN_png,xy_0_png,xy_1_png,xy_2_png,xy_4_png,yellow_1_png,ad_png,add_png,black_spot_png,cell_png,coin_png,coin_bg_png,game_cell_png,game_cell1_png,gb_png,gold_bg_png,haibao_png,hall_bg_png,hall_bind_png,hall_logo_png,head_1_png,head_bg_png,id_bg_png,live_shixun_png,logo_line_png,phone_png,red_spot_png,scell_png,scroll_bottom_png,spot_png,tab_btn1_png,tab_btn1_up_png,text1_png,vip_png,vip_shixun_png,zuan_png,btn1_png,btn2_png,btn3_png,btn4_png,btn5_png,btn6_png,help_png,bjl_go_btn_png,bjl_h_png,bjl_item_bg_png,bjl_ludan_png,bjl_x_png,bjl_z_png,game_item_png,head_bg1_png,points_1_png,points_2_png,r_b1_png,r_b2_png,tick1_png,xie_1_png,xie_2_png,kefu_png,lhbet_h_png,lhbet_hd_png,lhbet_he_png,lhbet_hs_png,lhbet_l_png,lhbet_ld_png,lhbet_ls_png,lhresult_bg_png,lhresult_h_png,lhresult_l_png,lh_a_png,lh_b_png,lh_c_png,loading1_png,loading2_png,get_code_png,input_bg_png,login_btn_png,login_text_png,logo_png,net_png,btn_bg_png,btn_spot_png,chat_png,close_png,live_png,music_png,set_text_png,sound_png,video2_png,zha_png,a1_png,a10_png,a11_png,a12_png,a13_png,a2_png,a3_png,a4_png,a5_png,a6_png,a7_png,a8_png,a9_png,b1_png,b10_png,b11_png,b12_png,b13_png,b2_png,b3_png,b4_png,b5_png,b6_png,b7_png,b8_png,b9_png,c1_png,c10_png,c11_png,c12_png,c13_png,c2_png,c3_png,c4_png,c5_png,c6_png,c7_png,c8_png,c9_png,d1_png,d10_png,d11_png,d12_png,d13_png,d2_png,d3_png,d4_png,d5_png,d6_png,d7_png,d8_png,d9_png,poke_bg_png,poke_mask_png",
+			"name": "preload"
+		},
+		{
+			"keys": "adLogin_png,beijing_jpg,bg_2_png,fastLogin_png,kefu_png,loading1_png,loading2_png,logo_png,net_png",
+			"name": "loading"
+		}
+	],
+	"resources": [
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "assets/font/num_font_1.fnt",
+			"type": "font",
+			"name": "num_font_1_fnt"
+		},
+		{
+			"url": "assets/font/num_font_1.png",
+			"type": "image",
+			"name": "num_font_1_png"
+		},
+		{
+			"url": "assets/mui/adLogin.png",
+			"type": "image",
+			"name": "adLogin_png"
+		},
+		{
+			"url": "assets/mui/beijing.jpg",
+			"type": "image",
+			"name": "beijing_jpg"
+		},
+		{
+			"url": "assets/mui/bg_2.png",
+			"type": "image",
+			"name": "bg_2_png"
+		},
+		{
+			"url": "assets/mui/bjlgame/bjl_da.png",
+			"type": "image",
+			"name": "bjl_da_png"
+		},
+		{
+			"url": "assets/mui/bjlgame/bjl_ping.png",
+			"type": "image",
+			"name": "bjl_ping_png"
+		},
+		{
+			"url": "assets/mui/bjlgame/bjl_xd.png",
+			"type": "image",
+			"name": "bjl_xd_png"
+		},
+		{
+			"url": "assets/mui/bjlgame/bjl_xian.png",
+			"type": "image",
+			"name": "bjl_xian_png"
+		},
+		{
+			"url": "assets/mui/bjlgame/bjl_xiao.png",
+			"type": "image",
+			"name": "bjl_xiao_png"
+		},
+		{
+			"url": "assets/mui/bjlgame/bjl_zd.png",
+			"type": "image",
+			"name": "bjl_zd_png"
+		},
+		{
+			"url": "assets/mui/bjlgame/bjl_zuan.png",
+			"type": "image",
+			"name": "bjl_zuan_png"
+		},
+		{
+			"url": "assets/mui/bjlgame/ludan_h.png",
+			"type": "image",
+			"name": "ludan_h_png"
+		},
+		{
+			"url": "assets/mui/bjlgame/ludan_point_b.png",
+			"type": "image",
+			"name": "ludan_point_b_png"
+		},
+		{
+			"url": "assets/mui/bjlgame/ludan_point_r.png",
+			"type": "image",
+			"name": "ludan_point_r_png"
+		},
+		{
+			"url": "assets/mui/bjlgame/ludan_x.png",
+			"type": "image",
+			"name": "ludan_x_png"
+		},
+		{
+			"url": "assets/mui/bjlgame/ludan_xwl.png",
+			"type": "image",
+			"name": "ludan_xwl_png"
+		},
+		{
+			"url": "assets/mui/bjlgame/ludan_z.png",
+			"type": "image",
+			"name": "ludan_z_png"
+		},
+		{
+			"url": "assets/mui/bjlgame/ludan_zwl.png",
+			"type": "image",
+			"name": "ludan_zwl_png"
+		},
+		{
+			"url": "assets/mui/change_ludan_item.png",
+			"type": "image",
+			"name": "change_ludan_item_png"
+		},
+		{
+			"url": "assets/mui/dobet/bet_day_arrow.png",
+			"type": "image",
+			"name": "bet_day_arrow_png"
+		},
+		{
+			"url": "assets/mui/dobet/bet_record_1.png",
+			"type": "image",
+			"name": "bet_record_1_png"
+		},
+		{
+			"url": "assets/mui/dobet/bet_record_2.png",
+			"type": "image",
+			"name": "bet_record_2_png"
+		},
+		{
+			"url": "assets/mui/dobet/bet_record_bg.png",
+			"type": "image",
+			"name": "bet_record_bg_png"
+		},
+		{
+			"url": "assets/mui/dobet/bottom_bg.png",
+			"type": "image",
+			"name": "bottom_bg_png"
+		},
+		{
+			"url": "assets/mui/dobet/m_close.png",
+			"type": "image",
+			"name": "m_close_png"
+		},
+		{
+			"url": "assets/mui/dobet/title2_bg.png",
+			"type": "image",
+			"name": "title2_bg_png"
+		},
+		{
+			"url": "assets/mui/dobet/title_bg.png",
+			"type": "image",
+			"name": "title_bg_png"
+		},
+		{
+			"url": "assets/mui/dobet/track_record_1.png",
+			"type": "image",
+			"name": "track_record_1_png"
+		},
+		{
+			"url": "assets/mui/dobet/track_record_2.png",
+			"type": "image",
+			"name": "track_record_2_png"
+		},
+		{
+			"url": "assets/mui/dobet/xiala_bg.png",
+			"type": "image",
+			"name": "xiala_bg_png"
+		},
+		{
+			"url": "assets/mui/dobet/xiala_btn_bg.png",
+			"type": "image",
+			"name": "xiala_btn_bg_png"
+		},
+		{
+			"url": "assets/mui/fastLogin.png",
+			"type": "image",
+			"name": "fastLogin_png"
+		},
+		{
+			"url": "assets/mui/game/!.png",
+			"type": "image",
+			"name": "!_png"
+		},
+		{
+			"url": "assets/mui/game/bet_area.png",
+			"type": "image",
+			"name": "bet_area_png"
+		},
+		{
+			"url": "assets/mui/game/bet_cf.png",
+			"type": "image",
+			"name": "bet_cf_png"
+		},
+		{
+			"url": "assets/mui/game/bet_qx.png",
+			"type": "image",
+			"name": "bet_qx_png"
+		},
+		{
+			"url": "assets/mui/game/bet_sure.png",
+			"type": "image",
+			"name": "bet_sure_png"
+		},
+		{
+			"url": "assets/mui/game/bet_switch.png",
+			"type": "image",
+			"name": "bet_switch_png"
+		},
+		{
+			"url": "assets/mui/game/bjl_quit.png",
+			"type": "image",
+			"name": "bjl_quit_png"
+		},
+		{
+			"url": "assets/mui/game/bjl_win_bg.png",
+			"type": "image",
+			"name": "bjl_win_bg_png"
+		},
+		{
+			"url": "assets/mui/game/blue_1.png",
+			"type": "image",
+			"name": "blue_1_png"
+		},
+		{
+			"url": "assets/mui/game/call1_bg.png",
+			"type": "image",
+			"name": "call1_bg_png"
+		},
+		{
+			"url": "assets/mui/game/call_all.png",
+			"type": "image",
+			"name": "call_all_png"
+		},
+		{
+			"url": "assets/mui/game/change_arrow.png",
+			"type": "image",
+			"name": "change_arrow_png"
+		},
+		{
+			"url": "assets/mui/game/change_bg.png",
+			"type": "image",
+			"name": "change_bg_png"
+		},
+		{
+			"url": "assets/mui/game/change_btn.png",
+			"type": "image",
+			"name": "change_btn_png"
+		},
+		{
+			"url": "assets/mui/game/change_ludan.png",
+			"type": "image",
+			"name": "change_ludan_png"
+		},
+		{
+			"url": "assets/mui/game/chat_bg.png",
+			"type": "image",
+			"name": "chat_bg_png"
+		},
+		{
+			"url": "assets/mui/game/chat_btn.png",
+			"type": "image",
+			"name": "chat_btn_png"
+		},
+		{
+			"url": "assets/mui/game/chou_bg.png",
+			"type": "image",
+			"name": "chou_bg_png"
+		},
+		{
+			"url": "assets/mui/game/chou_light.png",
+			"type": "image",
+			"name": "chou_light_png"
+		},
+		{
+			"url": "assets/mui/game/cm1.png",
+			"type": "image",
+			"name": "cm1_png"
+		},
+		{
+			"url": "assets/mui/game/cm2.png",
+			"type": "image",
+			"name": "cm2_png"
+		},
+		{
+			"url": "assets/mui/game/cm3.png",
+			"type": "image",
+			"name": "cm3_png"
+		},
+		{
+			"url": "assets/mui/game/cm4.png",
+			"type": "image",
+			"name": "cm4_png"
+		},
+		{
+			"url": "assets/mui/game/cm5.png",
+			"type": "image",
+			"name": "cm5_png"
+		},
+		{
+			"url": "assets/mui/game/cm6.png",
+			"type": "image",
+			"name": "cm6_png"
+		},
+		{
+			"url": "assets/mui/game/cm7.png",
+			"type": "image",
+			"name": "cm7_png"
+		},
+		{
+			"url": "assets/mui/game/cm8.png",
+			"type": "image",
+			"name": "cm8_png"
+		},
+		{
+			"url": "assets/mui/game/emoji.png",
+			"type": "image",
+			"name": "emoji_png"
+		},
+		{
+			"url": "assets/mui/game/f_x1.png",
+			"type": "image",
+			"name": "f_x1_png"
+		},
+		{
+			"url": "assets/mui/game/f_x2.png",
+			"type": "image",
+			"name": "f_x2_png"
+		},
+		{
+			"url": "assets/mui/game/f_x3.png",
+			"type": "image",
+			"name": "f_x3_png"
+		},
+		{
+			"url": "assets/mui/game/g1.png",
+			"type": "image",
+			"name": "g1_png"
+		},
+		{
+			"url": "assets/mui/game/g2.png",
+			"type": "image",
+			"name": "g2_png"
+		},
+		{
+			"url": "assets/mui/game/g3.png",
+			"type": "image",
+			"name": "g3_png"
+		},
+		{
+			"url": "assets/mui/game/g4.png",
+			"type": "image",
+			"name": "g4_png"
+		},
+		{
+			"url": "assets/mui/game/g5.png",
+			"type": "image",
+			"name": "g5_png"
+		},
+		{
+			"url": "assets/mui/game/g6.png",
+			"type": "image",
+			"name": "g6_png"
+		},
+		{
+			"url": "assets/mui/game/help_btn.png",
+			"type": "image",
+			"name": "help_btn_png"
+		},
+		{
+			"url": "assets/mui/game/ludan.png",
+			"type": "image",
+			"name": "ludan_png"
+		},
+		{
+			"url": "assets/mui/game/ludan_part.png",
+			"type": "image",
+			"name": "ludan_part_png"
+		},
+		{
+			"url": "assets/mui/game/luzi_tu.png",
+			"type": "image",
+			"name": "luzi_tu_png"
+		},
+		{
+			"url": "assets/mui/game/m_arrow.png",
+			"type": "image",
+			"name": "m_arrow_png"
+		},
+		{
+			"url": "assets/mui/game/nn_back.png",
+			"type": "image",
+			"name": "nn_back_png"
+		},
+		{
+			"url": "assets/mui/game/no_nn.png",
+			"type": "image",
+			"name": "no_nn_png"
+		},
+		{
+			"url": "assets/mui/game/result_1.png",
+			"type": "image",
+			"name": "result_1_png"
+		},
+		{
+			"url": "assets/mui/game/result_2.png",
+			"type": "image",
+			"name": "result_2_png"
+		},
+		{
+			"url": "assets/mui/game/result_btn.png",
+			"type": "image",
+			"name": "result_btn_png"
+		},
+		{
+			"url": "assets/mui/game/rule.png",
+			"type": "image",
+			"name": "rule_png"
+		},
+		{
+			"url": "assets/mui/game/sence_switch.png",
+			"type": "image",
+			"name": "sence_switch_png"
+		},
+		{
+			"url": "assets/mui/game/send_btn.png",
+			"type": "image",
+			"name": "send_btn_png"
+		},
+		{
+			"url": "assets/mui/game/set_btn.png",
+			"type": "image",
+			"name": "set_btn_png"
+		},
+		{
+			"url": "assets/mui/game/switch_room.png",
+			"type": "image",
+			"name": "switch_room_png"
+		},
+		{
+			"url": "assets/mui/game/time_count.png",
+			"type": "image",
+			"name": "time_count_png"
+		},
+		{
+			"url": "assets/mui/game/video.png",
+			"type": "image",
+			"name": "video_png"
+		},
+		{
+			"url": "assets/mui/game/WIN.png",
+			"type": "image",
+			"name": "WIN_png"
+		},
+		{
+			"url": "assets/mui/game/xy_0.png",
+			"type": "image",
+			"name": "xy_0_png"
+		},
+		{
+			"url": "assets/mui/game/xy_1.png",
+			"type": "image",
+			"name": "xy_1_png"
+		},
+		{
+			"url": "assets/mui/game/xy_2.png",
+			"type": "image",
+			"name": "xy_2_png"
+		},
+		{
+			"url": "assets/mui/game/xy_4.png",
+			"type": "image",
+			"name": "xy_4_png"
+		},
+		{
+			"url": "assets/mui/game/yellow_1.png",
+			"type": "image",
+			"name": "yellow_1_png"
+		},
+		{
+			"url": "assets/mui/hall/ad.png",
+			"type": "image",
+			"name": "ad_png"
+		},
+		{
+			"url": "assets/mui/hall/add.png",
+			"type": "image",
+			"name": "add_png"
+		},
+		{
+			"url": "assets/mui/hall/black_spot.png",
+			"type": "image",
+			"name": "black_spot_png"
+		},
+		{
+			"url": "assets/mui/hall/cell.png",
+			"type": "image",
+			"name": "cell_png"
+		},
+		{
+			"url": "assets/mui/hall/coin.png",
+			"type": "image",
+			"name": "coin_png"
+		},
+		{
+			"url": "assets/mui/hall/coin_bg.png",
+			"type": "image",
+			"name": "coin_bg_png"
+		},
+		{
+			"url": "assets/mui/hall/game_cell.png",
+			"type": "image",
+			"name": "game_cell_png"
+		},
+		{
+			"url": "assets/mui/hall/game_cell1.png",
+			"type": "image",
+			"name": "game_cell1_png"
+		},
+		{
+			"url": "assets/mui/hall/gb.png",
+			"type": "image",
+			"name": "gb_png"
+		},
+		{
+			"url": "assets/mui/hall/gold_bg.png",
+			"type": "image",
+			"name": "gold_bg_png"
+		},
+		{
+			"url": "assets/mui/hall/haibao.png",
+			"type": "image",
+			"name": "haibao_png"
+		},
+		{
+			"url": "assets/mui/hall/hall_bg.png",
+			"type": "image",
+			"name": "hall_bg_png"
+		},
+		{
+			"url": "assets/mui/hall/hall_bind.png",
+			"type": "image",
+			"name": "hall_bind_png"
+		},
+		{
+			"url": "assets/mui/hall/hall_logo.png",
+			"type": "image",
+			"name": "hall_logo_png"
+		},
+		{
+			"url": "assets/mui/hall/head_1.png",
+			"type": "image",
+			"name": "head_1_png"
+		},
+		{
+			"url": "assets/mui/hall/head_bg.png",
+			"type": "image",
+			"name": "head_bg_png"
+		},
+		{
+			"url": "assets/mui/hall/id_bg.png",
+			"type": "image",
+			"name": "id_bg_png"
+		},
+		{
+			"url": "assets/mui/hall/live_shixun.png",
+			"type": "image",
+			"name": "live_shixun_png"
+		},
+		{
+			"url": "assets/mui/hall/logo_line.png",
+			"type": "image",
+			"name": "logo_line_png"
+		},
+		{
+			"url": "assets/mui/hall/phone.png",
+			"type": "image",
+			"name": "phone_png"
+		},
+		{
+			"url": "assets/mui/hall/red_spot.png",
+			"type": "image",
+			"name": "red_spot_png"
+		},
+		{
+			"url": "assets/mui/hall/scell.png",
+			"type": "image",
+			"name": "scell_png"
+		},
+		{
+			"url": "assets/mui/hall/scroll_bottom.png",
+			"type": "image",
+			"name": "scroll_bottom_png"
+		},
+		{
+			"url": "assets/mui/hall/spot.png",
+			"type": "image",
+			"name": "spot_png"
+		},
+		{
+			"url": "assets/mui/hall/tab_btn1.png",
+			"type": "image",
+			"name": "tab_btn1_png"
+		},
+		{
+			"url": "assets/mui/hall/tab_btn1_up.png",
+			"type": "image",
+			"name": "tab_btn1_up_png"
+		},
+		{
+			"url": "assets/mui/hall/text1.png",
+			"type": "image",
+			"name": "text1_png"
+		},
+		{
+			"url": "assets/mui/hall/vip.png",
+			"type": "image",
+			"name": "vip_png"
+		},
+		{
+			"url": "assets/mui/hall/vip_shixun.png",
+			"type": "image",
+			"name": "vip_shixun_png"
+		},
+		{
+			"url": "assets/mui/hall/zuan.png",
+			"type": "image",
+			"name": "zuan_png"
+		},
+		{
+			"url": "assets/mui/help/btn1.png",
+			"type": "image",
+			"name": "btn1_png"
+		},
+		{
+			"url": "assets/mui/help/btn2.png",
+			"type": "image",
+			"name": "btn2_png"
+		},
+		{
+			"url": "assets/mui/help/btn3.png",
+			"type": "image",
+			"name": "btn3_png"
+		},
+		{
+			"url": "assets/mui/help/btn4.png",
+			"type": "image",
+			"name": "btn4_png"
+		},
+		{
+			"url": "assets/mui/help/btn5.png",
+			"type": "image",
+			"name": "btn5_png"
+		},
+		{
+			"url": "assets/mui/help/btn6.png",
+			"type": "image",
+			"name": "btn6_png"
+		},
+		{
+			"url": "assets/mui/help/help.png",
+			"type": "image",
+			"name": "help_png"
+		},
+		{
+			"url": "assets/mui/joinRoom/bjl_go_btn.png",
+			"type": "image",
+			"name": "bjl_go_btn_png"
+		},
+		{
+			"url": "assets/mui/joinRoom/bjl_h.png",
+			"type": "image",
+			"name": "bjl_h_png"
+		},
+		{
+			"url": "assets/mui/joinRoom/bjl_item_bg.png",
+			"type": "image",
+			"name": "bjl_item_bg_png"
+		},
+		{
+			"url": "assets/mui/joinRoom/bjl_ludan.png",
+			"type": "image",
+			"name": "bjl_ludan_png"
+		},
+		{
+			"url": "assets/mui/joinRoom/bjl_x.png",
+			"type": "image",
+			"name": "bjl_x_png"
+		},
+		{
+			"url": "assets/mui/joinRoom/bjl_z.png",
+			"type": "image",
+			"name": "bjl_z_png"
+		},
+		{
+			"url": "assets/mui/joinRoom/game_item.png",
+			"type": "image",
+			"name": "game_item_png"
+		},
+		{
+			"url": "assets/mui/joinRoom/head_bg1.png",
+			"type": "image",
+			"name": "head_bg1_png"
+		},
+		{
+			"url": "assets/mui/joinRoom/points_1.png",
+			"type": "image",
+			"name": "points_1_png"
+		},
+		{
+			"url": "assets/mui/joinRoom/points_2.png",
+			"type": "image",
+			"name": "points_2_png"
+		},
+		{
+			"url": "assets/mui/joinRoom/r_b1.png",
+			"type": "image",
+			"name": "r_b1_png"
+		},
+		{
+			"url": "assets/mui/joinRoom/r_b2.png",
+			"type": "image",
+			"name": "r_b2_png"
+		},
+		{
+			"url": "assets/mui/joinRoom/tick1.png",
+			"type": "image",
+			"name": "tick1_png"
+		},
+		{
+			"url": "assets/mui/joinRoom/xie_1.png",
+			"type": "image",
+			"name": "xie_1_png"
+		},
+		{
+			"url": "assets/mui/joinRoom/xie_2.png",
+			"type": "image",
+			"name": "xie_2_png"
+		},
+		{
+			"url": "assets/mui/kefu.png",
+			"type": "image",
+			"name": "kefu_png"
+		},
+		{
+			"url": "assets/mui/lh/lhbet_h.png",
+			"type": "image",
+			"name": "lhbet_h_png"
+		},
+		{
+			"url": "assets/mui/lh/lhbet_hd.png",
+			"type": "image",
+			"name": "lhbet_hd_png"
+		},
+		{
+			"url": "assets/mui/lh/lhbet_he.png",
+			"type": "image",
+			"name": "lhbet_he_png"
+		},
+		{
+			"url": "assets/mui/lh/lhbet_hs.png",
+			"type": "image",
+			"name": "lhbet_hs_png"
+		},
+		{
+			"url": "assets/mui/lh/lhbet_l.png",
+			"type": "image",
+			"name": "lhbet_l_png"
+		},
+		{
+			"url": "assets/mui/lh/lhbet_ld.png",
+			"type": "image",
+			"name": "lhbet_ld_png"
+		},
+		{
+			"url": "assets/mui/lh/lhbet_ls.png",
+			"type": "image",
+			"name": "lhbet_ls_png"
+		},
+		{
+			"url": "assets/mui/lh/lhresult_bg.png",
+			"type": "image",
+			"name": "lhresult_bg_png"
+		},
+		{
+			"url": "assets/mui/lh/lhresult_h.png",
+			"type": "image",
+			"name": "lhresult_h_png"
+		},
+		{
+			"url": "assets/mui/lh/lhresult_l.png",
+			"type": "image",
+			"name": "lhresult_l_png"
+		},
+		{
+			"url": "assets/mui/lh/lh_a.png",
+			"type": "image",
+			"name": "lh_a_png"
+		},
+		{
+			"url": "assets/mui/lh/lh_b.png",
+			"type": "image",
+			"name": "lh_b_png"
+		},
+		{
+			"url": "assets/mui/lh/lh_c.png",
+			"type": "image",
+			"name": "lh_c_png"
+		},
+		{
+			"url": "assets/mui/loading1.png",
+			"type": "image",
+			"name": "loading1_png"
+		},
+		{
+			"url": "assets/mui/loading2.png",
+			"type": "image",
+			"name": "loading2_png"
+		},
+		{
+			"url": "assets/mui/login/get_code.png",
+			"type": "image",
+			"name": "get_code_png"
+		},
+		{
+			"url": "assets/mui/login/input_bg.png",
+			"type": "image",
+			"name": "input_bg_png"
+		},
+		{
+			"url": "assets/mui/login/login_btn.png",
+			"type": "image",
+			"name": "login_btn_png"
+		},
+		{
+			"url": "assets/mui/login/login_text.png",
+			"type": "image",
+			"name": "login_text_png"
+		},
+		{
+			"url": "assets/mui/logo.png",
+			"type": "image",
+			"name": "logo_png"
+		},
+		{
+			"url": "assets/mui/net.png",
+			"type": "image",
+			"name": "net_png"
+		},
+		{
+			"url": "assets/mui/setting/btn_bg.png",
+			"type": "image",
+			"name": "btn_bg_png"
+		},
+		{
+			"url": "assets/mui/setting/btn_spot.png",
+			"type": "image",
+			"name": "btn_spot_png"
+		},
+		{
+			"url": "assets/mui/setting/chat.png",
+			"type": "image",
+			"name": "chat_png"
+		},
+		{
+			"url": "assets/mui/setting/close.png",
+			"type": "image",
+			"name": "close_png"
+		},
+		{
+			"url": "assets/mui/setting/live.png",
+			"type": "image",
+			"name": "live_png"
+		},
+		{
+			"url": "assets/mui/setting/music.png",
+			"type": "image",
+			"name": "music_png"
+		},
+		{
+			"url": "assets/mui/setting/set_text.png",
+			"type": "image",
+			"name": "set_text_png"
+		},
+		{
+			"url": "assets/mui/setting/sound.png",
+			"type": "image",
+			"name": "sound_png"
+		},
+		{
+			"url": "assets/mui/setting/video.png",
+			"type": "image",
+			"name": "video2_png"
+		},
+		{
+			"url": "assets/mui/zha.png",
+			"type": "image",
+			"name": "zha_png"
+		},
+		{
+			"url": "assets/poke/a1.png",
+			"type": "image",
+			"name": "a1_png"
+		},
+		{
+			"url": "assets/poke/a10.png",
+			"type": "image",
+			"name": "a10_png"
+		},
+		{
+			"url": "assets/poke/a11.png",
+			"type": "image",
+			"name": "a11_png"
+		},
+		{
+			"url": "assets/poke/a12.png",
+			"type": "image",
+			"name": "a12_png"
+		},
+		{
+			"url": "assets/poke/a13.png",
+			"type": "image",
+			"name": "a13_png"
+		},
+		{
+			"url": "assets/poke/a2.png",
+			"type": "image",
+			"name": "a2_png"
+		},
+		{
+			"url": "assets/poke/a3.png",
+			"type": "image",
+			"name": "a3_png"
+		},
+		{
+			"url": "assets/poke/a4.png",
+			"type": "image",
+			"name": "a4_png"
+		},
+		{
+			"url": "assets/poke/a5.png",
+			"type": "image",
+			"name": "a5_png"
+		},
+		{
+			"url": "assets/poke/a6.png",
+			"type": "image",
+			"name": "a6_png"
+		},
+		{
+			"url": "assets/poke/a7.png",
+			"type": "image",
+			"name": "a7_png"
+		},
+		{
+			"url": "assets/poke/a8.png",
+			"type": "image",
+			"name": "a8_png"
+		},
+		{
+			"url": "assets/poke/a9.png",
+			"type": "image",
+			"name": "a9_png"
+		},
+		{
+			"url": "assets/poke/b1.png",
+			"type": "image",
+			"name": "b1_png"
+		},
+		{
+			"url": "assets/poke/b10.png",
+			"type": "image",
+			"name": "b10_png"
+		},
+		{
+			"url": "assets/poke/b11.png",
+			"type": "image",
+			"name": "b11_png"
+		},
+		{
+			"url": "assets/poke/b12.png",
+			"type": "image",
+			"name": "b12_png"
+		},
+		{
+			"url": "assets/poke/b13.png",
+			"type": "image",
+			"name": "b13_png"
+		},
+		{
+			"url": "assets/poke/b2.png",
+			"type": "image",
+			"name": "b2_png"
+		},
+		{
+			"url": "assets/poke/b3.png",
+			"type": "image",
+			"name": "b3_png"
+		},
+		{
+			"url": "assets/poke/b4.png",
+			"type": "image",
+			"name": "b4_png"
+		},
+		{
+			"url": "assets/poke/b5.png",
+			"type": "image",
+			"name": "b5_png"
+		},
+		{
+			"url": "assets/poke/b6.png",
+			"type": "image",
+			"name": "b6_png"
+		},
+		{
+			"url": "assets/poke/b7.png",
+			"type": "image",
+			"name": "b7_png"
+		},
+		{
+			"url": "assets/poke/b8.png",
+			"type": "image",
+			"name": "b8_png"
+		},
+		{
+			"url": "assets/poke/b9.png",
+			"type": "image",
+			"name": "b9_png"
+		},
+		{
+			"url": "assets/poke/c1.png",
+			"type": "image",
+			"name": "c1_png"
+		},
+		{
+			"url": "assets/poke/c10.png",
+			"type": "image",
+			"name": "c10_png"
+		},
+		{
+			"url": "assets/poke/c11.png",
+			"type": "image",
+			"name": "c11_png"
+		},
+		{
+			"url": "assets/poke/c12.png",
+			"type": "image",
+			"name": "c12_png"
+		},
+		{
+			"url": "assets/poke/c13.png",
+			"type": "image",
+			"name": "c13_png"
+		},
+		{
+			"url": "assets/poke/c2.png",
+			"type": "image",
+			"name": "c2_png"
+		},
+		{
+			"url": "assets/poke/c3.png",
+			"type": "image",
+			"name": "c3_png"
+		},
+		{
+			"url": "assets/poke/c4.png",
+			"type": "image",
+			"name": "c4_png"
+		},
+		{
+			"url": "assets/poke/c5.png",
+			"type": "image",
+			"name": "c5_png"
+		},
+		{
+			"url": "assets/poke/c6.png",
+			"type": "image",
+			"name": "c6_png"
+		},
+		{
+			"url": "assets/poke/c7.png",
+			"type": "image",
+			"name": "c7_png"
+		},
+		{
+			"url": "assets/poke/c8.png",
+			"type": "image",
+			"name": "c8_png"
+		},
+		{
+			"url": "assets/poke/c9.png",
+			"type": "image",
+			"name": "c9_png"
+		},
+		{
+			"url": "assets/poke/d1.png",
+			"type": "image",
+			"name": "d1_png"
+		},
+		{
+			"url": "assets/poke/d10.png",
+			"type": "image",
+			"name": "d10_png"
+		},
+		{
+			"url": "assets/poke/d11.png",
+			"type": "image",
+			"name": "d11_png"
+		},
+		{
+			"url": "assets/poke/d12.png",
+			"type": "image",
+			"name": "d12_png"
+		},
+		{
+			"url": "assets/poke/d13.png",
+			"type": "image",
+			"name": "d13_png"
+		},
+		{
+			"url": "assets/poke/d2.png",
+			"type": "image",
+			"name": "d2_png"
+		},
+		{
+			"url": "assets/poke/d3.png",
+			"type": "image",
+			"name": "d3_png"
+		},
+		{
+			"url": "assets/poke/d4.png",
+			"type": "image",
+			"name": "d4_png"
+		},
+		{
+			"url": "assets/poke/d5.png",
+			"type": "image",
+			"name": "d5_png"
+		},
+		{
+			"url": "assets/poke/d6.png",
+			"type": "image",
+			"name": "d6_png"
+		},
+		{
+			"url": "assets/poke/d7.png",
+			"type": "image",
+			"name": "d7_png"
+		},
+		{
+			"url": "assets/poke/d8.png",
+			"type": "image",
+			"name": "d8_png"
+		},
+		{
+			"url": "assets/poke/d9.png",
+			"type": "image",
+			"name": "d9_png"
+		},
+		{
+			"url": "assets/poke/poke_bg.png",
+			"type": "image",
+			"name": "poke_bg_png"
+		},
+		{
+			"url": "assets/poke/poke_mask.png",
+			"type": "image",
+			"name": "poke_mask_png"
+		}
+	]
+}

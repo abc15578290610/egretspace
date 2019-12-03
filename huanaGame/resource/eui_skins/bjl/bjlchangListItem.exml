@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="bjlchangListItem" width="20" height="112" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="change_ludan_item_png"/>
+	<e:Group id="m_g" width="100%" height="100%"/>
+</e:Skin>

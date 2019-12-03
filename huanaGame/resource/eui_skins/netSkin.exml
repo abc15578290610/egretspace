@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="netSkin" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect width="100%" height="100%" fillAlpha="0.3" touchEnabled="false"/>
+	<e:Image id="m_net" source="net_png" horizontalCenter="0" verticalCenter="0" anchorOffsetX="100" anchorOffsetY="100"/>
+</e:Skin>

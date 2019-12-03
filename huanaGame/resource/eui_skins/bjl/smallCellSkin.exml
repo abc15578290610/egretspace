@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="smallCellSkin" width="13" height="13" xmlns:e="http://ns.egret.com/eui">
+    <e:Image id="m_type" source="r_b1_png" width="8" height="8" verticalCenter="0" horizontalCenter="0"/>
+	<e:Label id="m_num" text="" y="1" width="100%" height="100%" textColor="0x5bce31" size="10" verticalAlign="middle" textAlign="center" x="0"/>
+</e:Skin>
