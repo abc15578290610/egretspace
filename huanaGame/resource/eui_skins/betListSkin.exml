@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="betListSkin" width="102" height="652" xmlns:e="http://ns.egret.com/eui" xmlns:game="game.*" xmlns:w="http://ns.egret.com/wing">
-		<e:Group id="m_list" width="102" height="557" y="48">
-			<e:layout>
-				<e:VerticalLayout gap="3"/>
-			</e:layout>
-		</e:Group>
-</e:Skin>

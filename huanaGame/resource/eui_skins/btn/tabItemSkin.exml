@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="tabItemSkin" width="144" height="38" currentState="up" xmlns:e="http://ns.egret.com/eui" states="down,up" >
-	<e:Image source.up="tab_btn1_png" source="tab_btn1_png" source.down="tab_btn1_up_png"/>
-	<e:Label y="9" fontFamily="SimHei" size="22" width="110" textAlign="center" x="17" text="{data.name}"/>
-</e:Skin>

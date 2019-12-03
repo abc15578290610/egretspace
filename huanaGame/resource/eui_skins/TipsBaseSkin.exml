@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="TipsBaseSkin" width="1280" height="50" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Rect width="600" height="100%" y="0" horizontalCenter="0" fillAlpha="0.75"/>
-	<e:Label id="m_text" text="" y="6" width="600" size="25" anchorOffsetY="0" horizontalCenter="0" height="37" textAlign="center" verticalAlign="middle"/>
-</e:Skin>

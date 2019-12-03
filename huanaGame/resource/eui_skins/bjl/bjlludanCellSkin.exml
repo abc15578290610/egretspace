@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="bjlludanCellSkin" width="31" height="31" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Image id="m_type" source="ludan_z_png" width="31" height="31" horizontalCenter="0" verticalCenter="0"/>
-	<e:Image id="m_xdui" source="ludan_point_b_png" x="23" y="22" visible="false"/>
-	<e:Image id="m_zdui" source="ludan_point_r_png" x="0" y="0" visible="false"/>
-</e:Skin>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="gameItemCellSkin" width="39" height="162" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:game="game.*">
-	<game:nnCell id="m_0" skinName="nnCellSkin" horizontalCenter="0"/>
-	<game:nnCell id="m_1" skinName="nnCellSkin" y="43" horizontalCenter="0"/>
-	<game:nnCell id="m_2" skinName="nnCellSkin" y="85" horizontalCenter="0"/>
-	<game:nnCell id="m_3" skinName="nnCellSkin" y="128" horizontalCenter="0"/>
-</e:Skin>

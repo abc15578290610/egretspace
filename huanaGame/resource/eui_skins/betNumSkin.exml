@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="betNumSkin" width="103" height="107" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Image id="m_cm" source="cm1_png" x="11" y="11"/>
-	<e:Image id="m_select" source="chou_light_png" x="0" y="0" visible="false"/>
-</e:Skin>

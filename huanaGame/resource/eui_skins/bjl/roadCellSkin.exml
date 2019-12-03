@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="roadCellSkin" width="25" height="25" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
-	<e:Image id="m_type" source="r_b1_png" horizontalCenter="0" verticalCenter="0" width="20" height="20"/>
-	<e:Label id="m_num" text="" y="1" width="100%" height="100%" textColor="0x5bce31" size="10" verticalAlign="middle" textAlign="center" x="0"/>
-	<e:Image id="m_xdui" source="points_1_png" x="15" y="14" visible="false"/>
-	<e:Image id="m_zdui" source="points_2_png" x="3" y="5" visible="false"/>
-</e:Skin>

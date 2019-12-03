@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="head" width="89" height="89" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Image source="head_1_png"/>
-
-	<e:Image id="m_head" width="81" height="81" anchorOffsetX="0" anchorOffsetY="0" x="4" y="4"/>
-</e:Skin>

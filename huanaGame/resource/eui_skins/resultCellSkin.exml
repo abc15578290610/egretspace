@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="resultCellSkin" width="132" height="132" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Image source="result_btn_png" x="0" y="0"/>
-	<e:Image id="m_light" source="time_count_png" x="0" y="0"/>
-	<e:BitmapLabel id="m_time" y="73" font="num_font_1_fnt" text="30" letterSpacing="4" height="29" horizontalCenter="0"/>
-	<e:Label text="下注中" y="34" textColor="0xffd700" fontFamily="SimHei" size="22" horizontalCenter="0" strokeColor="0xf2b680" stroke="1"/>
-</e:Skin>
